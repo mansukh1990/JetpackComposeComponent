@@ -1,9 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
-    id("kotlin-parcelize")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -78,7 +77,8 @@ dependencies {
 
     //Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+    ksp("com.google.dagger:hilt-android-compiler:2.51.1")
+    ksp("com.google.dagger:hilt-compiler:2.51.1")
 
     //Coil
     implementation("io.coil-kt:coil-compose:2.4.0")
@@ -97,10 +97,11 @@ dependencies {
     implementation("androidx.paging:paging-runtime:3.1.1")
     implementation("androidx.paging:paging-compose:3.2.0-rc01")
 
-    //Room
-    implementation("androidx.room:room-runtime:2.5.2")
-    kapt("androidx.room:room-compiler:2.5.2")
-    implementation("androidx.room:room-ktx:2.5.2")
+    implementation("androidx.room:room-runtime:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
+    //DOES NOT WORK
+    //kapt "androidx.room:room-compiler:$room_version"
+    implementation("androidx.room:room-ktx:2.6.1")
 
     // Kotlin Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.0")
