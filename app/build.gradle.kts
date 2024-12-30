@@ -53,6 +53,7 @@ android {
 
 dependencies {
 
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -132,4 +133,23 @@ dependencies {
 
     implementation("com.google.accompanist:accompanist-pager:0.20.2")
     implementation("com.google.accompanist:accompanist-pager-indicators:0.20.2")
+
+
+    // Navigator
+    implementation ("cafe.adriel.voyager:voyager-navigator:1.0.1")
+
+    // BottomSheetNavigator
+    implementation ("cafe.adriel.voyager:voyager-bottom-sheet-navigator:1.1.0-beta03")
+
+    // TabNavigator
+    implementation ("cafe.adriel.voyager:voyager-tab-navigator:1.1.0-beta03")
+
+    // Transitions
+    implementation ("cafe.adriel.voyager:voyager-transitions:1.1.0-beta03")
+
+    // Android ViewModel integration
+    implementation ("cafe.adriel.voyager:voyager-androidx:1.0.0-rc10")
+
+    // Hilt integration
+    implementation ("cafe.adriel.voyager:voyager-hilt:1.1.0-beta03")
 }
