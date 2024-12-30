@@ -20,8 +20,7 @@ fun ShowSwitch() {
         checked = isChecked.value,
         onCheckedChange = {
             isChecked.value = it
-        },
-        modifier = Modifier.run {
+        }, modifier = Modifier.run {
             size(20.dp)
             padding(100.dp)
         }
