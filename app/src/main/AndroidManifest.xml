@@ -18,13 +18,7 @@
 
         <activity
             android:name=".bottomsheet.BottomSheetActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".navigation.bottomnavigation.BottomNavigationActivity"
             android:exported="false" />
@@ -54,8 +48,14 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.JetpackComposeComponent" />
+            android:exported="true"
+            android:theme="@style/Theme.JetpackComposeComponent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".component.LoginActivity"
             android:exported="true" />

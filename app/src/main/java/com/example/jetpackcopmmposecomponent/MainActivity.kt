@@ -8,7 +8,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.TopAppBarComp
+import com.example.jetpackcopmmposecomponent.component.checkbox.CheckBoxUi
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +17,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetpackCopmmposeComponentTheme {
-                TopAppBarComp()
+                // TopAppBarComp()
+                // RadioButton()
+                CheckBoxUi()
             }
         }
     }
