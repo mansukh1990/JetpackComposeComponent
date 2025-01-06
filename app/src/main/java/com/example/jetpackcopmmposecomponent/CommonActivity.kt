@@ -3,8 +3,9 @@ package com.example.jetpackcopmmposecomponent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.jetpackcopmmposecomponent.component.tabview.TabViewLayout
-import com.example.jetpackcopmmposecomponent.component.textfield.TextFieldLayout
+import com.example.jetpackcopmmposecomponent.component.GuidelinesBarrierchains.CreateBarrierExample
+import com.example.jetpackcopmmposecomponent.component.GuidelinesBarrierchains.CreateChainExample
+import com.example.jetpackcopmmposecomponent.component.GuidelinesBarrierchains.GuideLineExample
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
 
 class CommonActivity : ComponentActivity() {
@@ -16,7 +17,11 @@ class CommonActivity : ComponentActivity() {
                 //ButtonLayout()
                 //BoxLayout()
                 //TextFieldLayout()
-                TabViewLayout()
+                //  TabViewLayout()
+                //LoginPageWithConstraintLayout()
+                //GuideLineExample()
+               // CreateBarrierExample()
+                CreateChainExample()
             }
         }
     }
