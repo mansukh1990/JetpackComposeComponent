@@ -152,4 +152,7 @@ dependencies {
 
     // Hilt integration
     implementation ("cafe.adriel.voyager:voyager-hilt:1.1.0-beta03")
+
+    //constraint layout
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 }
