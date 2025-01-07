@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.example.jetpackcopmmposecomponent.component.CustomTitleBar.CustomTitleBar
 import com.example.jetpackcopmmposecomponent.component.CustomToggleButton.CustomToggleButton
+import com.example.jetpackcopmmposecomponent.component.SuggestionChips.SuggestionChipsLayout
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
 
 class CommonActivity : ComponentActivity() {
@@ -23,7 +24,9 @@ class CommonActivity : ComponentActivity() {
                 //CreateChainExample()
                 //  ParentContent()
               //  CustomTitleBar()
-                CustomToggleButton()
+                //CustomToggleButton()
+
+                SuggestionChipsLayout()
             }
         }
     }
