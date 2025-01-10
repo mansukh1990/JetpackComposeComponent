@@ -9,8 +9,9 @@ import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.JetpackCompose.Scaffold.ScaffoldComponent
-import com.example.jetpackcopmmposecomponent.JetpackCompose.TextView.TextViewComponent
+import com.example.jetpackcopmmposecomponent.JetpackCompose.Buttons.ButtonLayout
+import com.example.jetpackcopmmposecomponent.JetpackCompose.ImageandIcon.ImageAndIcon
+import com.example.jetpackcopmmposecomponent.JetpackCompose.RowColumnandBox.RowColumnAndBox
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -33,6 +34,6 @@ class JetpackCompose : ComponentActivity() {
     @Preview(showBackground = true, showSystemUi = true)
     @Composable
     fun ComposePreview() {
-       TextViewComponent()
+        ImageAndIcon()
     }
 }
