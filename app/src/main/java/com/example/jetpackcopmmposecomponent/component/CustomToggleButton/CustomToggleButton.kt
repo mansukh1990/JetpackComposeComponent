@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
@@ -17,8 +19,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.Center
 import androidx.compose.ui.Alignment.Companion.CenterVertically
+import androidx.compose.ui.Alignment.Companion.TopEnd
+import androidx.compose.ui.Alignment.Companion.TopStart
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -27,6 +32,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetpackcopmmposecomponent.R
+import com.example.jetpackcopmmposecomponent.ui.theme.DarkPink
+import com.example.jetpackcopmmposecomponent.ui.theme.LightPink
 
 @Composable
 fun CustomToggleButton() {
@@ -117,5 +124,57 @@ fun CustomToggleButton() {
 
     }
 
+
+}
+
+@Composable
+fun CreateCustomToggleButton(
+    selected: Boolean,
+    onChangeValue: (Boolean) -> Unit,
+) {
+    Card(
+        modifier = Modifier
+            .width(50.dp),
+        elevation = CardDefaults.cardElevation(0.dp),
+        shape = RoundedCornerShape(16.dp)
+    ) {
+        Box(
+            modifier = Modifier
+                .background(
+                    if (selected) DarkPink else LightPink
+                )
+                .clickable {
+                    onChangeValue(!selected)
+                },
+            contentAlignment = if(selected) TopEnd else TopStart
+        ) {
+            CustomToggleButtons(Modifier.padding(5.dp))
+
+        }
+    }
+
+
+}
+
+@Composable
+fun CustomToggleButtons(
+    modifier: Modifier
+) {
+
+    Card(
+        modifier = modifier
+            .size(20.dp),
+        elevation = CardDefaults.cardElevation(0.dp),
+        shape = CircleShape,
+
+        ) {
+        Box(
+            modifier = Modifier
+                .background(Color.White)
+        ) {
+
+        }
+
+    }
 
 }

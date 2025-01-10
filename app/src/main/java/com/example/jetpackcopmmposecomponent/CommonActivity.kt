@@ -3,9 +3,17 @@ package com.example.jetpackcopmmposecomponent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.jetpackcopmmposecomponent.component.CustomTitleBar.CustomTitleBar
-import com.example.jetpackcopmmposecomponent.component.CustomToggleButton.CustomToggleButton
-import com.example.jetpackcopmmposecomponent.component.SuggestionChips.SuggestionChipsLayout
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.Surface
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import com.example.jetpackcopmmposecomponent.SharedViewmodel.ScreenNavigation
+import com.example.jetpackcopmmposecomponent.component.textfield.TextFieldLayout
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
 
 class CommonActivity : ComponentActivity() {
@@ -13,6 +21,7 @@ class CommonActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetpackCopmmposeComponentTheme {
+                var selected by remember { mutableStateOf(false) }
                 //TextLayout()
                 //ButtonLayout()
                 //BoxLayout()
@@ -26,7 +35,27 @@ class CommonActivity : ComponentActivity() {
               //  CustomTitleBar()
                 //CustomToggleButton()
 
-                SuggestionChipsLayout()
+                //   SuggestionChipsLayout()
+                // FilterChipLayout()
+                //SearchViewLayout()
+                Surface {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        ScreenNavigation()
+                     //   TextFieldLayout()
+//                        CustomToggleButton(
+//                            selected = selected,
+//                            onChangeValue = {
+//                                selected = it
+//                            }
+//                        )
+                    }
+                }
+
+
             }
         }
     }

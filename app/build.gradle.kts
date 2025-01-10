@@ -133,7 +133,7 @@ dependencies {
 
     implementation("com.google.accompanist:accompanist-pager:0.20.2")
     implementation("com.google.accompanist:accompanist-pager-indicators:0.20.2")
-
+    implementation ("com.google.accompanist:accompanist-flowlayout:0.26.4-beta")
 
     // Navigator
     implementation ("cafe.adriel.voyager:voyager-navigator:1.0.1")
