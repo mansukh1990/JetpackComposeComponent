@@ -4,14 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.JetpackCompose.Buttons.ButtonLayout
-import com.example.jetpackcopmmposecomponent.JetpackCompose.ImageandIcon.ImageAndIcon
-import com.example.jetpackcopmmposecomponent.JetpackCompose.RowColumnandBox.RowColumnAndBox
+import androidx.compose.ui.unit.dp
+import com.example.jetpackcopmmposecomponent.JetpackCompose.LazyColuLazyRowandLazyGridRowAndColumn.RecyclerViewLayout
+import com.example.jetpackcopmmposecomponent.JetpackCompose.ViewPager.ViewPagerLayout
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -21,7 +22,8 @@ class JetpackCompose : ComponentActivity() {
             JetpackCopmmposeComponentTheme {
                 Surface(
                     modifier = Modifier
-                        .fillMaxSize(),
+                        .fillMaxSize()
+                        .padding(top = 10.dp, start = 10.dp, end = 10.dp),
                     color = MaterialTheme.colors.background
                 ) {
                     ComposePreview()
@@ -34,6 +36,6 @@ class JetpackCompose : ComponentActivity() {
     @Preview(showBackground = true, showSystemUi = true)
     @Composable
     fun ComposePreview() {
-        ImageAndIcon()
+        ViewPagerLayout()
     }
 }
