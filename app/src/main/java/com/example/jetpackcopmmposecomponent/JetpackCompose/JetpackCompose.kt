@@ -11,8 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.jetpackcopmmposecomponent.JetpackCompose.LazyColuLazyRowandLazyGridRowAndColumn.RecyclerViewLayout
-import com.example.jetpackcopmmposecomponent.JetpackCompose.ViewPager.ViewPagerLayout
+import com.example.jetpackcopmmposecomponent.JetpackCompose.MarqueeText.MarqueeTextLayout
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -36,6 +35,6 @@ class JetpackCompose : ComponentActivity() {
     @Preview(showBackground = true, showSystemUi = true)
     @Composable
     fun ComposePreview() {
-        ViewPagerLayout()
+        MarqueeTextLayout()
     }
 }
