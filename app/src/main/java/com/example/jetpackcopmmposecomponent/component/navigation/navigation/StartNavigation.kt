@@ -1,13 +1,13 @@
-package com.example.jetpackcopmmposecomponent.navigation.navigation
+package com.example.jetpackcopmmposecomponent.component.navigation.navigation
 
 import android.app.Activity
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.jetpackcopmmposecomponent.navigation.navigation.screens.FirstScreen
-import com.example.jetpackcopmmposecomponent.navigation.navigation.screens.SecondScreen
-import com.example.jetpackcopmmposecomponent.navigation.navigation.screens.ThirdScreen
+import com.example.jetpackcopmmposecomponent.component.navigation.navigation.screens.FirstScreen
+import com.example.jetpackcopmmposecomponent.component.navigation.navigation.screens.SecondScreen
+import com.example.jetpackcopmmposecomponent.component.navigation.navigation.screens.ThirdScreen
 
 @Composable
 fun StartNavigation(context: Activity) {

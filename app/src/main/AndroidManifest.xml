@@ -28,26 +28,26 @@
             android:name=".PizzaApp.PizzaAppActivity"
             android:exported="false" />
         <activity
-            android:name=".DocumentBank.DocumentBankActivity"
+            android:name=".component.DocumentBank.DocumentBankActivity"
             android:exported="false" />
         <activity
             android:name=".CommonActivity"
             android:exported="false" />
 
         <activity
-            android:name=".bottomsheet.BottomSheetActivity"
+            android:name=".component.bottomsheet.BottomSheetActivity"
             android:exported="false" />
         <activity
-            android:name=".navigation.bottomnavigation.BottomNavigationActivity"
+            android:name=".component.navigation.bottomnavigation.BottomNavigationActivity"
             android:exported="false" />
         <activity
-            android:name=".navigation.navigationwithvoyager.NavigationWithVoyagerActivity"
+            android:name=".component.navigation.navigationwithvoyager.NavigationWithVoyagerActivity"
             android:exported="false" />
         <activity
-            android:name=".navigation.navigation.NavigationActivity"
+            android:name=".component.navigation.navigation.NavigationActivity"
             android:exported="false" />
         <activity
-            android:name=".navigation.navigation.DestinationActivity"
+            android:name=".component.navigation.navigation.DestinationActivity"
             android:exported="false" />
         <activity
             android:name=".viewpager.OnBoardingActivity"

@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.navigation.navigation.screens
+package com.example.jetpackcopmmposecomponent.component.navigation.navigation.screens
 
 import android.app.Activity
 import android.content.Intent
@@ -9,7 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.jetpackcopmmposecomponent.navigation.navigation.DestinationActivity
+import com.example.jetpackcopmmposecomponent.component.navigation.navigation.DestinationActivity
 
 @Composable
 fun ThirdScreen(context: Activity) {

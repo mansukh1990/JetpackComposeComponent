@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.DocumentBank
+package com.example.jetpackcopmmposecomponent.component.DocumentBank
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image

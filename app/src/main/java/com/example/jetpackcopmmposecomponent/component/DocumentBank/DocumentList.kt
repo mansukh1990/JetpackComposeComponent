@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.DocumentBank
+package com.example.jetpackcopmmposecomponent.component.DocumentBank
 
 import com.example.jetpackcopmmposecomponent.R
 

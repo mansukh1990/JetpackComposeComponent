@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.navigation.navigationwithvoyager.screens
+package com.example.jetpackcopmmposecomponent.component.navigation.navigationwithvoyager.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

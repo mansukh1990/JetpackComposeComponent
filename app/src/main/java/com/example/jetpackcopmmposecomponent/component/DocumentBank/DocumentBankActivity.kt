@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.DocumentBank
+package com.example.jetpackcopmmposecomponent.component.DocumentBank
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

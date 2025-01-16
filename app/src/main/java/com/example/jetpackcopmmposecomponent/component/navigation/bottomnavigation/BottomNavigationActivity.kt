@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.navigation.bottomnavigation
+package com.example.jetpackcopmmposecomponent.component.navigation.bottomnavigation
 
 import android.annotation.SuppressLint
 import android.os.Bundle

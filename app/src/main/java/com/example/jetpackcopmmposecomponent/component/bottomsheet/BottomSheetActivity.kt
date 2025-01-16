@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.bottomsheet
+package com.example.jetpackcopmmposecomponent.component.bottomsheet
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

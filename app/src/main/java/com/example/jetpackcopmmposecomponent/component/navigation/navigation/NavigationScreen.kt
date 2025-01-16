@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.navigation.navigation
+package com.example.jetpackcopmmposecomponent.component.navigation.navigation
 
 sealed class NavigationScreen(
     val route: String
