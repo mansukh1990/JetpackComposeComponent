@@ -8,13 +8,13 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.jetpackcopmmposecomponent.PizzaApp.screen.HomeScreen
-import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
+import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class PizzaAppActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackCopmmposeComponentTheme {
+            JetpackComposeComponentTheme {
                 Surface(
                     modifier = Modifier
                         .fillMaxSize(),

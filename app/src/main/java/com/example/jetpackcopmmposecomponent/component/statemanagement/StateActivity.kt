@@ -18,7 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
+import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -29,7 +29,7 @@ class StateActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackCopmmposeComponentTheme {
+            JetpackComposeComponentTheme {
                 Surface(
                     color = MaterialTheme.colorScheme.background
                 ) {

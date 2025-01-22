@@ -21,7 +21,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import com.example.jetpackcopmmposecomponent.Retrofit.Post
 import com.example.jetpackcopmmposecomponent.Retrofit.util.ApiState
-import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
+import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -32,7 +32,7 @@ class RetrofitActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackCopmmposeComponentTheme {
+            JetpackComposeComponentTheme {
                 Surface(
                     color = MaterialTheme.colorScheme.background
                 ) {

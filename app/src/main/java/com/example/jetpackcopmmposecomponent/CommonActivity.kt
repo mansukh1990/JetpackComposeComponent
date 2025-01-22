@@ -13,14 +13,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.example.jetpackcopmmposecomponent.SharedViewmodel.ScreenNavigation
-import com.example.jetpackcopmmposecomponent.component.textfield.TextFieldLayout
-import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
+import com.example.jetpackcopmmposecomponent.component.PickImageFromGallery.PickImageFromGallery
+import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class CommonActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackCopmmposeComponentTheme {
+            JetpackComposeComponentTheme {
                 var selected by remember { mutableStateOf(false) }
                 //TextLayout()
                 //ButtonLayout()
@@ -44,7 +44,7 @@ class CommonActivity : ComponentActivity() {
                             .fillMaxSize(),
                         contentAlignment = Alignment.Center
                     ) {
-                        ScreenNavigation()
+                        PickImageFromGallery()
                      //   TextFieldLayout()
 //                        CustomToggleButton(
 //                            selected = selected,

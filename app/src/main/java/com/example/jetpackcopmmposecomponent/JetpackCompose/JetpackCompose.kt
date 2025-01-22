@@ -3,32 +3,17 @@ package com.example.jetpackcopmmposecomponent.JetpackCompose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import com.example.jetpackcopmmposecomponent.JetpackCompose.CheckBox.CheckBoxScreen
-import com.example.jetpackcopmmposecomponent.JetpackCompose.FlowRowandFlowColumn.FlowRowandFlowColumn
-import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
+import com.example.jetpackcopmmposecomponent.starbucksApp.navigation.StarBucksNavigation
+import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackCopmmposeComponentTheme {
-                Surface(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(top = 10.dp, start = 10.dp, end = 10.dp),
-                    color = MaterialTheme.colors.background
-                ) {
-                    ComposePreview()
-
-                }
+            JetpackComposeComponentTheme {
+                ComposePreview()
             }
         }
     }
@@ -36,7 +21,7 @@ class JetpackCompose : ComponentActivity() {
     @Preview(showBackground = true, showSystemUi = true)
     @Composable
     fun ComposePreview() {
-        FlowRowandFlowColumn()
+        StarBucksNavigation()
     }
 }
 

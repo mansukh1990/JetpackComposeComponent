@@ -1,7 +1,9 @@
 package com.example.jetpackcopmmposecomponent.JetpackCompose.TextFieldLayout
 
 import android.widget.Toast
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -38,6 +40,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
@@ -166,5 +169,48 @@ fun TextFieldLayout() {
                     Toast.makeText(context, "you reached max line limit", Toast.LENGTH_SHORT).show()
             }
         )
+    }
+}
+@Composable
+fun EditableDataRowWithBasicTextField(
+    label: String,
+    value: String,
+    isEditable: Boolean,
+    onValueChange: (String) -> Unit = {}
+) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(
+            text = label,
+            fontSize = 14.sp,
+            color = Color.Gray,
+            modifier = Modifier.weight(1f)
+        )
+        if (isEditable) {
+            BasicTextField(
+                value = value,
+                onValueChange = { onValueChange(it) },
+                textStyle = TextStyle(fontSize = 14.sp, color = Color.Black),
+                modifier = Modifier
+                    .weight(1f)
+                    .border(BorderStroke(1.dp, Color.Gray), shape = RoundedCornerShape(4.dp))
+                    .padding(8.dp)
+            )
+        } else {
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .border(BorderStroke(1.dp, Color.Gray), shape = RoundedCornerShape(4.dp))
+                    .padding(8.dp)
+            ) {
+                Text(
+                    text = value,
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
     }
 }

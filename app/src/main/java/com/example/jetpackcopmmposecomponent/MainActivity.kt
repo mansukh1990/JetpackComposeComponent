@@ -17,8 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcopmmposecomponent.component.navigationdrawer.CreateDrawer
-import com.example.jetpackcopmmposecomponent.component.text.TextLayout
-import com.example.jetpackcopmmposecomponent.ui.theme.JetpackCopmmposeComponentTheme
+import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -29,7 +28,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackCopmmposeComponentTheme {
+            JetpackComposeComponentTheme {
                 val scaffoldState = rememberScaffoldState()
                 val scope = rememberCoroutineScope()
                 androidx.compose.material.Scaffold(
@@ -73,7 +72,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    JetpackCopmmposeComponentTheme {
+    JetpackComposeComponentTheme {
         Greeting("Android")
     }
 }
