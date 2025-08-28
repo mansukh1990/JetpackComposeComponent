@@ -3,6 +3,7 @@ package com.example.jetpackcopmmposecomponent.JetpackCompose.Navigations
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Button
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -77,7 +78,7 @@ fun SecondScreen(navHostController: NavHostController, viewmodel: MainViewModel)
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        androidx.compose.material.Text(
+       Text(
             text = "my name is $_name"
         )
 

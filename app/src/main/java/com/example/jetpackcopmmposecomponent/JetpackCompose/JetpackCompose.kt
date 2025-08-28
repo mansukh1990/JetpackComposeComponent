@@ -22,6 +22,7 @@ class JetpackCompose : ComponentActivity() {
     @Composable
     fun ComposePreview() {
         StarBucksNavigation()
+        //TextFieldLayout()
     }
 }
 

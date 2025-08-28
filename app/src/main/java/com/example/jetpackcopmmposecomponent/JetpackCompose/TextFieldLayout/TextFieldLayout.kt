@@ -30,6 +30,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusDirection
 import androidx.compose.ui.focus.FocusRequester
@@ -96,7 +97,7 @@ fun TextFieldLayout() {
 //            visualTransformation = PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(
                 capitalization = KeyboardCapitalization.Words,
-                keyboardType = KeyboardType.Phone,
+                keyboardType = KeyboardType.Number,
                 imeAction = ImeAction.Next
             ),
             //  singleLine = true,
@@ -169,6 +170,16 @@ fun TextFieldLayout() {
                     Toast.makeText(context, "you reached max line limit", Toast.LENGTH_SHORT).show()
             }
         )
+        Spacer(modifier = Modifier.height(20.dp))
+        EditableDataRowWithBasicTextField(
+            label = "Name",
+            value = name,
+            isEditable = true,
+            onValueChange = {
+                name = it
+            }
+        )
+
     }
 }
 @Composable
@@ -180,13 +191,14 @@ fun EditableDataRowWithBasicTextField(
 ) {
     Row(
         modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceBetween
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
             text = label,
             fontSize = 14.sp,
             color = Color.Gray,
-            modifier = Modifier.weight(1f)
+            modifier = Modifier.padding(end = 8.dp)
         )
         if (isEditable) {
             BasicTextField(

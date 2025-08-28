@@ -16,6 +16,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -50,7 +51,7 @@ class LoginActivity : ComponentActivity() {
         password: String
     ) {
         if (userName == "mrm" && password == "1234") {
-            Toast.makeText(this, "logged", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "logged In", Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(this, "wrong credential", Toast.LENGTH_SHORT).show()
         }
@@ -97,11 +98,19 @@ class LoginActivity : ComponentActivity() {
                 onValueChange = {
                     userName.value = it
                 },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color.Black,
+                    unfocusedBorderColor = Color.Black,
+                    focusedTextColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    cursorColor = Color.Black
+
+                ),
                 leadingIcon = {
                     Icon(Icons.Default.Person, contentDescription = "person")
                 },
                 label = {
-                    Text(text = "UserName")
+                    Text(text = "UserName", color = Color.Black)
                 },
                 placeholder = {
                     Text(text = "enter username")
@@ -117,8 +126,16 @@ class LoginActivity : ComponentActivity() {
                 leadingIcon = {
                     Icon(Icons.Default.Info, contentDescription = "info")
                 },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color.Black,
+                    unfocusedBorderColor = Color.Black,
+                    focusedTextColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    cursorColor = Color.Black
+
+                ),
                 label = {
-                    Text(text = "Password")
+                    Text(text = "Password", color = Color.Black)
                 },
                 placeholder = {
                     Text(text = "enter password")
