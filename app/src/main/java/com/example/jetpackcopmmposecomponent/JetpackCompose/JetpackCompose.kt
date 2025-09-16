@@ -10,7 +10,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`14_Row`.RowComposable
+import com.example.jetpackcopmmposecomponent.JetpackCompose.counterapp.CounterApp
+import com.example.jetpackcopmmposecomponent.component.`17_card`.CardComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -38,6 +39,10 @@ class JetpackCompose : ComponentActivity() {
         // ButtonComposable(modifier = modifier)
         //ColumnComposable(modifier = modifier)
       //  RowComposable(modifier = modifier)
+        // BoxComposable(modifier = modifier)
+        // SurfaceComposable(modifier = modifier)
+       // CardComposable(modifier = modifier)
+        CounterApp(modifier = modifier)
         //StarBucksNavigation()
         //TextFieldLayout()
         //ComposableBottomSheet()
