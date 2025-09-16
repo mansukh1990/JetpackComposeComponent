@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.RowColumnandBox
+package com.example.jetpackcopmmposecomponent.JetpackCompose.`13_RowColumnAndBox`
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

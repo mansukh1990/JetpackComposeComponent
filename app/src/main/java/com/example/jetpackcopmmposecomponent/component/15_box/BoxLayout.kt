@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component.box
+package com.example.jetpackcopmmposecomponent.component.`15_box`
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

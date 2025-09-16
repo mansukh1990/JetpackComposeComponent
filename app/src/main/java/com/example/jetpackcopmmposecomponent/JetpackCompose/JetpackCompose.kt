@@ -10,7 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.ButtonComposable.ButtonComposable
+import com.example.jetpackcopmmposecomponent.component.`14_Row`.RowComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -35,7 +35,9 @@ class JetpackCompose : ComponentActivity() {
         //TextLayout(name = "Android", modifier = modifier)
         //ButtonComposableLayout()
         // ButtonLayout()
-        ButtonComposable(modifier = modifier)
+        // ButtonComposable(modifier = modifier)
+        //ColumnComposable(modifier = modifier)
+      //  RowComposable(modifier = modifier)
         //StarBucksNavigation()
         //TextFieldLayout()
         //ComposableBottomSheet()
