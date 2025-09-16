@@ -25,7 +25,7 @@ class BottomSheetActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetpackComposeComponentTheme {
-                Surface() {
+                Surface {
                     BottomSheetNavigator {
                         Navigator(screen = BottomSheetScreen)
 

@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component.button
+package com.example.jetpackcopmmposecomponent.component.`12_button`
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ButtonLayout() {
+fun ButtonComposableLayout() {
 
     Column(
         modifier = Modifier

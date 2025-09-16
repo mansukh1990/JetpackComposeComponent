@@ -58,7 +58,7 @@ class LoginActivity : ComponentActivity() {
 
     }
 
-    @Preview
+    @Preview(showBackground = true, showSystemUi = true)
     @Composable
     fun LoginScreen() {
 

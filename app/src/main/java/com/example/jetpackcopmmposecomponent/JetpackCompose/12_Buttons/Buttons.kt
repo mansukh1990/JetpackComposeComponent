@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.Buttons
+package com.example.jetpackcopmmposecomponent.JetpackCompose.`12_Buttons`
 
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke

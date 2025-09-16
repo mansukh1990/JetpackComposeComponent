@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.TextView
+package com.example.jetpackcopmmposecomponent.JetpackCompose.`1_TextView`
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

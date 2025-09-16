@@ -32,7 +32,6 @@ fun MarqueeTextLayout() {
                     .padding(horizontal = 5.dp)
                     .basicMarquee(
                         iterations = 5,
-                        delayMillis = 500,
                         velocity = 300.dp
                     ),
                 fontSize = 22.sp
