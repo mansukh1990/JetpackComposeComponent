@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component.FilterChip
+package com.example.jetpackcopmmposecomponent.component.`21_chips`
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.ExperimentalLayoutApi

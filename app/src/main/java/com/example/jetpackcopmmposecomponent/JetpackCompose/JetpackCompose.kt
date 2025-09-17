@@ -11,7 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`21_chips`.ChipsComposable
+import com.example.jetpackcopmmposecomponent.component.`27_lazyhorizontalstaggeredgrid`.LazyHorizontalStaggeredGridComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -53,7 +53,13 @@ class JetpackCompose : ComponentActivity() {
             // ImageComposable(modifier = modifier)
             //IconsComposable(modifier = modifier)
             //TextFieldComposable(modifier = modifier)
-            ChipsComposable(modifier = modifier)
+            //ChipsComposable(modifier = modifier)
+            //LazyColumnComposable(modifier = modifier)
+            // LazyRowComposable(modifier = modifier)
+            //LazyVerticalGridComposable(modifier = modifier)
+            //LazyHorizontalGridComposable(modifier = modifier)
+            // LazyVerticalStaggeredGridComposable(modifier = modifier)
+            LazyHorizontalStaggeredGridComposable(modifier = modifier)
             //StarBucksNavigation()
             //TextFieldLayout()
             //ComposableBottomSheet()
