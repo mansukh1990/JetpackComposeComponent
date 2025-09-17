@@ -8,11 +8,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`20_textfield`.TextFieldComposable
+import com.example.jetpackcopmmposecomponent.component.`21_chips`.ChipsComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -53,7 +52,8 @@ class JetpackCompose : ComponentActivity() {
             // CounterApp(modifier = modifier)
             // ImageComposable(modifier = modifier)
             //IconsComposable(modifier = modifier)
-            TextFieldComposable(modifier = modifier)
+            //TextFieldComposable(modifier = modifier)
+            ChipsComposable(modifier = modifier)
             //StarBucksNavigation()
             //TextFieldLayout()
             //ComposableBottomSheet()
