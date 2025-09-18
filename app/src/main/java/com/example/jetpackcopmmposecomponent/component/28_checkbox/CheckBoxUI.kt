@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component.checkbox
+package com.example.jetpackcopmmposecomponent.component.`28_checkbox`
 
 //noinspection UsingMaterialAndMaterial3Libraries
 import androidx.compose.foundation.BorderStroke
@@ -18,6 +18,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
+import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
@@ -79,7 +80,7 @@ fun CustomCheckBox() {
             .padding(30.dp),
         horizontalArrangement = Arrangement.Center
     ) {
-        androidx.compose.material3.Card(
+        Card(
             modifier = Modifier,
             elevation = CardDefaults.cardElevation(0.dp),
             shape = RoundedCornerShape(8.dp),
