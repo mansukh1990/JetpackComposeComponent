@@ -32,7 +32,6 @@ fun TopAppBarComposable(modifier: Modifier = Modifier) {
             Text(
                 modifier = modifier.fillMaxWidth(),
                 text = "Home",
-                textAlign = TextAlign.Center
             )
         },
         navigationIcon = {

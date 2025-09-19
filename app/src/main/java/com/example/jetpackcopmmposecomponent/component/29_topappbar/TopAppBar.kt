@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component
+package com.example.jetpackcopmmposecomponent.component.`29_topappbar`
 
 import android.annotation.SuppressLint
 import androidx.compose.material.icons.Icons
@@ -13,8 +13,9 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
-import com.example.jetpackcopmmposecomponent.Greeting
+import com.example.jetpackcopmmposecomponent.component.ShowSwitch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -22,7 +23,7 @@ import com.example.jetpackcopmmposecomponent.Greeting
 fun TopAppBarComp() {
     Scaffold(
         topBar = {
-            androidx.compose.material3.TopAppBar(
+            TopAppBar(
                 title = {
                     Text(text = "Demo App Mano")
                 },

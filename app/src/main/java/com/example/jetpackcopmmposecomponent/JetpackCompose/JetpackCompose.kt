@@ -11,9 +11,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckBoxComposable
-import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckBoxUi
-import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckboxMinimalExample
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -63,7 +60,7 @@ class JetpackCompose : ComponentActivity() {
             // LazyVerticalStaggeredGridComposable(modifier = modifier)
             //LazyHorizontalStaggeredGridComposable(modifier = modifier)
            // CheckBoxComposable(modifier = modifier)
-            CheckBoxUi()
+            //  CheckBoxUi()
             //StarBucksNavigation()
             //TextFieldLayout()
             //ComposableBottomSheet()
