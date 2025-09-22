@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.ImageandIcon
+package com.example.jetpackcopmmposecomponent.component.`19_icons`
 
 import android.widget.Toast
 import androidx.compose.foundation.Image

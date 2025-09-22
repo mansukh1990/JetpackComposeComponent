@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.CheckBox
+package com.example.jetpackcopmmposecomponent.component.`28_checkbox`
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -21,7 +21,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.jetpackcopmmposecomponent.ui.theme.Purple40
-import com.example.jetpackcopmmposecomponent.ui.theme.PurpleGrey80
 
 @Composable
 fun CheckBoxScreen() {

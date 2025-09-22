@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.`12_Buttons`
+package com.example.jetpackcopmmposecomponent.component.`12_button`
 
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
@@ -11,7 +11,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -50,7 +52,7 @@ fun ButtonLayout() {
                 Text(text = "Simple Button")
             }
 
-            androidx.compose.material.OutlinedButton(
+            OutlinedButton(
                 onClick = {
                     Toast.makeText(context, "Outlined button", Toast.LENGTH_SHORT).show()
                 },
@@ -60,7 +62,7 @@ fun ButtonLayout() {
             ) {
                 Text(text = "Outlined Button")
             }
-            androidx.compose.material.TextButton(
+            TextButton(
                 onClick = {
                     Toast.makeText(context, "Text Button", Toast.LENGTH_SHORT).show()
                 }

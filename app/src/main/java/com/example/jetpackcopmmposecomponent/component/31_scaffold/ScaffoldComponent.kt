@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.Scaffold
+package com.example.jetpackcopmmposecomponent.component.`31_scaffold`
 
 import android.annotation.SuppressLint
 import androidx.compose.material.BottomAppBar

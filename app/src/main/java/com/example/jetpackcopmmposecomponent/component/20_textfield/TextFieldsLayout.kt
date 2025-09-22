@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.TextFieldLayout
+package com.example.jetpackcopmmposecomponent.component.`20_textfield`
 
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
@@ -49,7 +49,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TextFieldLayout() {
+fun TextFieldsLayout() {
     val context = LocalContext.current
 
     var name by remember { mutableStateOf("") }

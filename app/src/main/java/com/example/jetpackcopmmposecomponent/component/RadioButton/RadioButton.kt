@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.RadioButton
+package com.example.jetpackcopmmposecomponent.component.RadioButton
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
