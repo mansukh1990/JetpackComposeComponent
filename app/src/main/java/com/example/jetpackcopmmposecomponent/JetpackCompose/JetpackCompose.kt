@@ -11,9 +11,13 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.component.`31_scaffold`.ScaffoldComposable
+import com.example.jetpackcopmmposecomponent.component.`33_naviationdrawer`.NavigationDrawerComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -64,7 +68,8 @@ class JetpackCompose : ComponentActivity() {
             //StarBucksNavigation()
             //TextFieldLayout()
             //ComposableBottomSheet()
-            // ScaffoldComposable(modifier = modifier)
+            ScaffoldComposable()
+            NavigationDrawerComposable()
         }
 
     }

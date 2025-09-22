@@ -1,10 +1,11 @@
-package com.example.jetpackcopmmposecomponent.component.dialog
+package com.example.jetpackcopmmposecomponent.component.`34_dialog`
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ProgressIndicatorDefaults
@@ -77,7 +78,7 @@ fun AlertDialogScreen() {
 
     }
     if (isDialog) {
-        androidx.compose.material.AlertDialog(
+        AlertDialog(
             onDismissRequest = {},
             title = {
                 Text(text = "Dialog Box")

@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component.navigationdrawer
+package com.example.jetpackcopmmposecomponent.component.`33_naviationdrawer`
 
 import androidx.compose.material.Icon
 import androidx.compose.material.ScaffoldState

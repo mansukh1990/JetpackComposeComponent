@@ -16,7 +16,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.navigationdrawer.CreateDrawer
+import com.example.jetpackcopmmposecomponent.component.`33_naviationdrawer`.CreateDrawer
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 import kotlinx.coroutines.launch
 
