@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 fun RadioButtonLayout() {
 
     var radioState by remember { mutableStateOf(false) }
-    var gender = listOf("Male", "Female", "Other")
+    val gender = listOf("Male", "Female", "Other")
     var genderState by remember { mutableStateOf(gender[0]) }
 
     Box(

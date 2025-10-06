@@ -11,7 +11,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`36_sideeffect`.DerivedStateComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -77,7 +76,7 @@ class JetpackCompose : ComponentActivity() {
             // RememberCoroutineScopeComposable(modifier = modifier)
             //RememberUpdateStateComposable(modifier = modifier)
             // ProduceStateComposable(modifier = modifier)
-            DerivedStateComposable(modifier = modifier)
+            //DerivedStateComposable(modifier = modifier)
         }
 
     }

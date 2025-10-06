@@ -17,6 +17,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.IconButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
@@ -38,7 +39,7 @@ fun CounterLayout() {
 
     //  val counter = rememberSaveable { mutableStateOf(0) }
     //  var counter by remember { mutableStateOf(0) }
-    var (counter, setCounter) = rememberSaveable { mutableStateOf(0) }
+    val (counter, setCounter) = rememberSaveable { mutableIntStateOf(0) }
 
     Column(
         modifier = Modifier

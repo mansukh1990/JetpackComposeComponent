@@ -11,6 +11,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.BasicAlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -99,46 +100,46 @@ fun showAlertDialog(
                 }
 
             }
-//            AlertDialog(
-//                title = {
-//                    Text(
-//                        text = "Alert",
-//                        fontSize = 20.sp,
-//                        textAlign = TextAlign.Center,
-//                        modifier = Modifier.fillMaxWidth()
-//
-//                    )
-//                },
-//                text = {
-//                    Text(
-//                        text = "This is an alert dialog",
-//                        fontSize = 16.sp,
-//                        textAlign = TextAlign.Center,
-//                        modifier = Modifier.fillMaxWidth()
-//                    )
-//                },
-//                properties = DialogProperties(
-//                    dismissOnBackPress = true,
-//                    dismissOnClickOutside = false
-//                ),
-//                onDismissRequest = {
-//                    onDismiss()
-//                },
-//                confirmButton = {
-//                    TextButton(onClick = {
-//
-//                    }) {
-//                        Text(text = "Confirm")
-//                    }
-//                },
-//                dismissButton = {
-//                    TextButton(onClick = {
-//                        onDismiss()
-//                    }) {
-//                        Text(text = "Dismiss")
-//                    }
-//                }
-//            )
+            AlertDialog(
+                title = {
+                    Text(
+                        text = "Alert",
+                        fontSize = 20.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+
+                    )
+                },
+                text = {
+                    Text(
+                        text = "This is an alert dialog",
+                        fontSize = 16.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                },
+                properties = DialogProperties(
+                    dismissOnBackPress = true,
+                    dismissOnClickOutside = false
+                ),
+                onDismissRequest = {
+                    onDismiss()
+                },
+                confirmButton = {
+                    TextButton(onClick = {
+
+                    }) {
+                        Text(text = "Confirm")
+                    }
+                },
+                dismissButton = {
+                    TextButton(onClick = {
+                        onDismiss()
+                    }) {
+                        Text(text = "Dismiss")
+                    }
+                }
+            )
 
         }
 

@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.jetpackcopmmposecomponent.JetpackCompose.SpannableText
 
 import androidx.compose.foundation.layout.Arrangement

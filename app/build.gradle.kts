@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("com.google.dagger.hilt.android")
     id("com.google.devtools.ksp")
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.0" apply false
 }
 
 android {
@@ -75,7 +76,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     //Compose Navigation
-    implementation("androidx.navigation:navigation-compose:2.6.0")
+    implementation("androidx.navigation:navigation-compose:2.9.4")
 
     //Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
@@ -156,4 +157,5 @@ dependencies {
 
     //constraint layout
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
 }
