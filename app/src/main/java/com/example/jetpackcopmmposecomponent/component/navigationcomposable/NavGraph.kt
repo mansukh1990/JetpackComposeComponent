@@ -1,7 +1,6 @@
 package com.example.jetpackcopmmposecomponent.component.navigationcomposable
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -10,7 +9,7 @@ import com.example.jetpackcopmmposecomponent.component.navigationcomposable.ui.S
 
 
 @Composable
-fun SetupNavGraph(modifier: Modifier = Modifier) {
+fun SetupNavGraph() {
 
     val navController = rememberNavController()
 
