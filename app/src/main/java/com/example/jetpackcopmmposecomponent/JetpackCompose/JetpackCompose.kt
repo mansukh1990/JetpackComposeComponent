@@ -11,7 +11,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`37_lazylist`.LazyListScreen
+import com.example.jetpackcopmmposecomponent.component.`26_lazyverticalstaggeredgrid`.LazyHorizontalStgGridComposable
+import com.example.jetpackcopmmposecomponent.component.`26_lazyverticalstaggeredgrid`.LazyVerticalStgGridComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -78,7 +79,10 @@ class JetpackCompose : ComponentActivity() {
             //RememberUpdateStateComposable(modifier = modifier)
             // ProduceStateComposable(modifier = modifier)
             //DerivedStateComposable(modifier = modifier)
-            LazyListScreen(modifier = modifier)
+            //  LazyListScreen(modifier = modifier)
+            // ExposedDropdownMenuComposable(modifier = modifier)
+           // LazyVerticalStgGridComposable(modifier = modifier)
+            LazyHorizontalStgGridComposable(modifier = modifier)
         }
 
     }

@@ -3,11 +3,16 @@ package com.example.jetpackcopmmposecomponent.component.`26_lazyverticalstaggere
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.staggeredgrid.LazyHorizontalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.foundation.lazy.staggeredgrid.items
@@ -121,5 +126,57 @@ val cricketPlayerList1 = listOf(
     Cricketer1("Mahendra Singh Dhoni", Color.Cyan),
     Cricketer1("Saurav Ganguly", Color.Black),
 )
+
+@Composable
+fun LazyVerticalStgGridComposable(modifier: Modifier = Modifier) {
+
+    LazyVerticalStaggeredGrid(
+        columns = StaggeredGridCells.Fixed(2),
+        horizontalArrangement = Arrangement.spacedBy(10.dp),
+        verticalItemSpacing = 10.dp
+    ) {
+        items(count = 10) { index ->
+            val height = if (index % 3 == 0) 200.dp else 100.dp
+
+            Box(
+                modifier = modifier
+                    .fillMaxWidth()
+                    .height(height)
+                    .background(Color.Red),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = index.toString()
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun LazyHorizontalStgGridComposable(modifier: Modifier = Modifier) {
+
+    LazyHorizontalStaggeredGrid (
+        rows = StaggeredGridCells.Fixed(2),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+        horizontalItemSpacing = 16.dp
+    ) {
+        items(count = 10) { index ->
+            val width = if (index % 3 == 0) 200.dp else 100.dp
+
+            Box(
+                modifier = modifier
+                    .width(width)
+                    .fillMaxHeight()
+                    .background(Color.Red),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = index.toString()
+                )
+            }
+        }
+    }
+}
 
 
