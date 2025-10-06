@@ -82,7 +82,7 @@ class JetpackCompose : ComponentActivity() {
             //  LazyListScreen(modifier = modifier)
             // ExposedDropdownMenuComposable(modifier = modifier)
            // LazyVerticalStgGridComposable(modifier = modifier)
-            LazyHorizontalStgGridComposable(modifier = modifier)
+           // LazyHorizontalStgGridComposable(modifier = modifier)
         }
 
     }
