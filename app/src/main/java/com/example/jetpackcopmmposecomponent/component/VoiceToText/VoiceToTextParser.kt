@@ -17,7 +17,7 @@ class VoiceToTextParser(
     private val _state = MutableStateFlow(VoiceToTextParseState())
     val state = _state.asStateFlow()
 
-    val recognizer = SpeechRecognizer.createSpeechRecognizer(app)
+    val recognizer: SpeechRecognizer? = SpeechRecognizer.createSpeechRecognizer(app)
 
     fun startListening(languageCode: String?) {
         _state.update {
@@ -40,8 +40,8 @@ class VoiceToTextParser(
                 languageCode
             )
         }
-        recognizer.setRecognitionListener(this)
-        recognizer.startListening(intent)
+        recognizer?.setRecognitionListener(this)
+        recognizer?.startListening(intent)
 
         _state.update {
             it.copy(
@@ -56,7 +56,7 @@ class VoiceToTextParser(
                 isSpeaking = false
             )
         }
-        recognizer.stopListening()
+        recognizer?.stopListening()
     }
 
     override fun onReadyForSpeech(p0: Bundle?) {
