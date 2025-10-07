@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.JetpackCompose.MarqueeText
+package com.example.jetpackcopmmposecomponent.component.MarqueeText
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.basicMarquee

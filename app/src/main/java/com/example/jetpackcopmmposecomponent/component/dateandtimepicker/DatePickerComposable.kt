@@ -1,7 +1,6 @@
 package com.example.jetpackcopmmposecomponent.component.dateandtimepicker
 
 import android.os.Build
-import android.widget.DatePicker
 import androidx.annotation.RequiresApi
 import androidx.compose.material3.DatePicker
 import androidx.compose.material3.DisplayMode

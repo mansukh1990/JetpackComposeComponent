@@ -11,6 +11,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.component.PickImageFromGallery.PickImageFromCamera
+import com.example.jetpackcopmmposecomponent.component.PickImageFromGallery.PickImageFromGallery
 import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.DatePickerComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -84,7 +86,9 @@ class JetpackCompose : ComponentActivity() {
            // LazyHorizontalStgGridComposable(modifier = modifier)
             //  TimePickerComposable(modifier = modifier)
             // DateRangePickerComposable(modifier = modifier)
-            DatePickerComposable(modifier = modifier)
+          //  DatePickerComposable(modifier = modifier)
+          //  PickImageFromGallery()
+            PickImageFromCamera()
         }
 
     }

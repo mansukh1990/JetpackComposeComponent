@@ -16,9 +16,6 @@
       <SelectionState runConfigName="JetpackCompose (2)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DisposableEffectComposable">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="NavigationComposableActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
@@ -26,6 +23,9 @@
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="VoiceToTextSpeech">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="NotesActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
