@@ -27,12 +27,6 @@ import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
 
 
-@Composable
-fun ViewPagerLayout() {
-    //  HorizontalPagerScreen()
-    VerticalPagerScreen()
-}
-
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HorizontalPagerScreen() {

@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.RadioButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -38,9 +39,11 @@ fun RadioButton() {
             genderList.forEach {
                 Row {
                     Text(
-                        text = it, modifier = Modifier.align(Alignment.CenterVertically)
+                        text = it,
+                        modifier = Modifier
+                            .align(Alignment.CenterVertically)
                     )
-                    androidx.compose.material3.RadioButton(
+                    RadioButton(
                         selected = genderState == it, onClick = {
                             genderState = it
                         }, colors = RadioButtonDefaults.colors(

@@ -11,14 +11,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.PickImageFromGallery.PickImageFromCamera
-import com.example.jetpackcopmmposecomponent.component.PickImageFromGallery.PickImageFromGallery
-import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.DatePickerComposable
+import com.example.jetpackcopmmposecomponent.JetpackCompose.ViewPager.HorizontalPagerScreen
+import com.example.jetpackcopmmposecomponent.JetpackCompose.ViewPager.VerticalPagerScreen
+import com.example.jetpackcopmmposecomponent.component.CustomTitleBar.CustomTitleBar
+import com.example.jetpackcopmmposecomponent.component.RadioButton.RadioButtonLayout
+import com.example.jetpackcopmmposecomponent.component.tabview.TabViewLayout
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -88,7 +88,13 @@ class JetpackCompose : ComponentActivity() {
             // DateRangePickerComposable(modifier = modifier)
           //  DatePickerComposable(modifier = modifier)
           //  PickImageFromGallery()
-            PickImageFromCamera()
+            //PickImageFromCamera()
+            // ShowSwitch(modifier = modifier)
+           // RadioButtonLayout()
+          //  HorizontalPagerScreen()
+          //  VerticalPagerScreen()
+            //TabViewLayout(modifier = modifier)
+            CustomTitleBar()
         }
 
     }

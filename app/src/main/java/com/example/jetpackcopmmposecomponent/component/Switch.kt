@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ShowSwitch() {
+fun ShowSwitch(modifier: Modifier = Modifier) {
 
     val isChecked = remember {
         mutableStateOf(true)
@@ -20,7 +20,7 @@ fun ShowSwitch() {
         checked = isChecked.value,
         onCheckedChange = {
             isChecked.value = it
-        }, modifier = Modifier.run {
+        }, modifier = modifier.run {
             size(20.dp)
             padding(100.dp)
         }

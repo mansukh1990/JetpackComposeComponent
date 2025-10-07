@@ -16,19 +16,20 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.pager.ExperimentalPagerApi
+import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.rememberPagerState
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
-fun TabViewLayout() {
+fun TabViewLayout(modifier: Modifier) {
 
     val pagesState = rememberPagerState()
     val currentPage = pagesState.currentPage
     val scope = rememberCoroutineScope()
 
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
     ) {
         TabRow(
@@ -61,7 +62,7 @@ fun TabViewLayout() {
             }
 
         }
-        com.google.accompanist.pager.HorizontalPager(
+       HorizontalPager(
             count = tabList.size,
             state = pagesState,
             modifier = Modifier
