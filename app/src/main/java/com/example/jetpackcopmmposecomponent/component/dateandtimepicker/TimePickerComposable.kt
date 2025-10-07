@@ -4,9 +4,8 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.TimePicker
-import androidx.compose.material3.TimePickerState
+import androidx.compose.material3.rememberTimePickerState
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import java.time.LocalDateTime
 
@@ -17,13 +16,11 @@ fun TimePickerComposable(modifier: Modifier = Modifier) {
 
     val dateTime = LocalDateTime.now()
 
-    val timePickerState = remember {
-        TimePickerState(
+    val timePickerState = rememberTimePickerState(
             initialHour = dateTime.hour,
             initialMinute = dateTime.minute,
             is24Hour = true
         )
-    }
 
     TimePicker(
         state = timePickerState,

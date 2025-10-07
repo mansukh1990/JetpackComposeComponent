@@ -11,7 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.TimePickerComposable
+import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.DatePickerComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -82,7 +82,9 @@ class JetpackCompose : ComponentActivity() {
             // ExposedDropdownMenuComposable(modifier = modifier)
            // LazyVerticalStgGridComposable(modifier = modifier)
            // LazyHorizontalStgGridComposable(modifier = modifier)
-            TimePickerComposable(modifier = modifier)
+            //  TimePickerComposable(modifier = modifier)
+            // DateRangePickerComposable(modifier = modifier)
+            DatePickerComposable(modifier = modifier)
         }
 
     }
