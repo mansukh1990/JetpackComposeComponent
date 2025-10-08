@@ -21,7 +21,7 @@ class PasswordValidate {
     }
 
     private fun validateSpecialCharacter(password: String): Boolean =
-        password.any { it in "!@#\$%^&*()_+-=[]{};':\"\\|,.<>/?" }
+        password.any { it in "!@#$%^&*()_+-=[]{};':\"\\|,.<>/?" }
 
 
     private fun validateCapitalizedLetter(password: String): Boolean =
