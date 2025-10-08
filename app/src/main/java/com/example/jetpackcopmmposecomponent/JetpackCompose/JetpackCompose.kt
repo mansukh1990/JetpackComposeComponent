@@ -6,12 +6,13 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.password_validation_realtime.PasswordValidationScreen
+import com.example.jetpackcopmmposecomponent.component.PickImageFromGallery.MultiplePhotoPickerFromGallery
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -20,10 +21,12 @@ class JetpackCompose : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetpackComposeComponentTheme {
-                Scaffold(
-                    modifier = Modifier.fillMaxSize()
-                ) { innerPadding ->
-                    ComposePreview(modifier = Modifier.padding(innerPadding))
+                Scaffold (
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .statusBarsPadding()
+                ) {
+                    ComposePreview()
                 }
             }
 
@@ -91,7 +94,8 @@ class JetpackCompose : ComponentActivity() {
             //  VerticalPagerScreen()
             //TabViewLayout(modifier = modifier)
             //CustomTitleBar()
-            PasswordValidationScreen()
+            // PasswordValidationScreen()
+            MultiplePhotoPickerFromGallery()
         }
 
     }
