@@ -42,7 +42,7 @@ fun DocumentBank() {
             .fillMaxSize()
     ) {
         SearchableDropdownDocumentList()
-        Document(document = DocumentData())
+        Document(document = documentData())
 
     }
 

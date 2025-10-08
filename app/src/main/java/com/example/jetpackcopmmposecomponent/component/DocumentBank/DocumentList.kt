@@ -10,7 +10,7 @@ data class DocumentList(
     val closeIcon : Int
 
 )
-fun DocumentData():List<DocumentList>{
+fun documentData():List<DocumentList>{
     return listOf(
         DocumentList(R.drawable.ic_image_upload,"POD","Drop Location",R.drawable.ic_upload,R.drawable.ic_closed),
         DocumentList(R.drawable.ic_image_upload,"POD","Drop Location",R.drawable.ic_upload,R.drawable.ic_closed),

@@ -11,11 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.JetpackCompose.ViewPager.HorizontalPagerScreen
-import com.example.jetpackcopmmposecomponent.JetpackCompose.ViewPager.VerticalPagerScreen
-import com.example.jetpackcopmmposecomponent.component.CustomTitleBar.CustomTitleBar
-import com.example.jetpackcopmmposecomponent.component.RadioButton.RadioButtonLayout
-import com.example.jetpackcopmmposecomponent.component.tabview.TabViewLayout
+import com.example.jetpackcopmmposecomponent.component.password_validation_realtime.PasswordValidationScreen
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -24,7 +20,7 @@ class JetpackCompose : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetpackComposeComponentTheme {
-                Scaffold (
+                Scaffold(
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
                     ComposePreview(modifier = Modifier.padding(innerPadding))
@@ -64,7 +60,7 @@ class JetpackCompose : ComponentActivity() {
             //LazyHorizontalGridComposable(modifier = modifier)
             // LazyVerticalStaggeredGridComposable(modifier = modifier)
             //LazyHorizontalStaggeredGridComposable(modifier = modifier)
-           // CheckBoxComposable(modifier = modifier)
+            // CheckBoxComposable(modifier = modifier)
             //  CheckBoxUi()
             //StarBucksNavigation()
             //TextFieldLayout()
@@ -82,19 +78,20 @@ class JetpackCompose : ComponentActivity() {
             //DerivedStateComposable(modifier = modifier)
             //  LazyListScreen(modifier = modifier)
             // ExposedDropdownMenuComposable(modifier = modifier)
-           // LazyVerticalStgGridComposable(modifier = modifier)
-           // LazyHorizontalStgGridComposable(modifier = modifier)
+            // LazyVerticalStgGridComposable(modifier = modifier)
+            // LazyHorizontalStgGridComposable(modifier = modifier)
             //  TimePickerComposable(modifier = modifier)
             // DateRangePickerComposable(modifier = modifier)
-          //  DatePickerComposable(modifier = modifier)
-          //  PickImageFromGallery()
+            //  DatePickerComposable(modifier = modifier)
+            //  PickImageFromGallery()
             //PickImageFromCamera()
             // ShowSwitch(modifier = modifier)
-           // RadioButtonLayout()
-          //  HorizontalPagerScreen()
-          //  VerticalPagerScreen()
+            // RadioButtonLayout()
+            //  HorizontalPagerScreen()
+            //  VerticalPagerScreen()
             //TabViewLayout(modifier = modifier)
-            CustomTitleBar()
+            //CustomTitleBar()
+            PasswordValidationScreen()
         }
 
     }
