@@ -12,6 +12,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.component.Canvas.DrawingScreen
 import com.example.jetpackcopmmposecomponent.component.PickImageFromGallery.MultiplePhotoPickerFromGallery
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -95,7 +96,8 @@ class JetpackCompose : ComponentActivity() {
             //TabViewLayout(modifier = modifier)
             //CustomTitleBar()
             // PasswordValidationScreen()
-            MultiplePhotoPickerFromGallery()
+           // MultiplePhotoPickerFromGallery()
+            DrawingScreen()
         }
 
     }

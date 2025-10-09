@@ -162,4 +162,7 @@ dependencies {
     //constraint layout
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+
+    //permission
+    implementation("com.google.accompanist:accompanist-permissions:0.31.1-alpha")
 }
