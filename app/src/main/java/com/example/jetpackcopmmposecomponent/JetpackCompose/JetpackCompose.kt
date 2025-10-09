@@ -3,6 +3,7 @@ package com.example.jetpackcopmmposecomponent.JetpackCompose
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.component.LottieAnimation.LottieAnimationComposable
 import com.example.jetpackcopmmposecomponent.component.OtpTextfield.OtpTextField
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
@@ -19,7 +21,11 @@ import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentThe
 class JetpackCompose : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        enableEdgeToEdge(
+            statusBarStyle = SystemBarStyle.dark(
+                android.graphics.Color.TRANSPARENT
+            )
+        )
         setContent {
             JetpackComposeComponentTheme {
                 TranslucentStatusBar(color = Color.Blue)
@@ -100,7 +106,8 @@ class JetpackCompose : ComponentActivity() {
            // MultiplePhotoPickerFromGallery()
             //  DrawingScreen()
            // SegmentedButtonsComposable()
-            OtpTextField()
+           //OtpTextField
+             LottieAnimationComposable()
         }
 
     }
