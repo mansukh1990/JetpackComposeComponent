@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.component.OtpTextfield.OtpTextField
 import com.example.jetpackcopmmposecomponent.component.SegmentedButtons.SegmentedButtonsComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -96,7 +97,8 @@ class JetpackCompose : ComponentActivity() {
             // PasswordValidationScreen()
            // MultiplePhotoPickerFromGallery()
             //  DrawingScreen()
-            SegmentedButtonsComposable()
+           // SegmentedButtonsComposable()
+            OtpTextField()
         }
 
     }
