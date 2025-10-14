@@ -65,6 +65,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.material3)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.palette.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -76,7 +77,7 @@ dependencies {
     implementation(libs.androidx.compose.material.icons.extended)
 
     //Splash Api
-    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation(libs.androidx.core.splashscreen)
 
     //Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.9.4")
@@ -167,4 +168,8 @@ dependencies {
     implementation("com.google.accompanist:accompanist-permissions:0.31.1-alpha")
     //lottie-animation
     implementation("com.airbnb.android:lottie-compose:6.6.10")
+    //coil
+    implementation("io.coil-kt:coil-compose:2.7.0")
+    implementation("io.coil-kt:coil-gif:2.7.0")
+    implementation("io.coil-kt:coil-svg:2.7.0")
 }

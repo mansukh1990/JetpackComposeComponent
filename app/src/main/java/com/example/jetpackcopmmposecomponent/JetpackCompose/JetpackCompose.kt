@@ -13,9 +13,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.LottieAnimation.LottieAnimationComposable
-import com.example.jetpackcopmmposecomponent.component.OtpTextfield.OtpTextField
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
+import com.example.jetpackcopmmposecomponent.component.keyboard_gifs_and_stickers.ImageForCoilComposable
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -107,7 +106,9 @@ class JetpackCompose : ComponentActivity() {
             //  DrawingScreen()
            // SegmentedButtonsComposable()
            //OtpTextField
-             LottieAnimationComposable()
+            //  LottieAnimationComposable()
+            // ImageLoaderComposable()
+            ImageForCoilComposable()
         }
 
     }
