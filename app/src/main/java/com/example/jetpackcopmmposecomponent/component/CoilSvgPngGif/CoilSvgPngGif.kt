@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component.keyboard_gifs_and_stickers
+package com.example.jetpackcopmmposecomponent.component.CoilSvgPngGif
 
 import android.os.Build
 import android.os.Build.VERSION.SDK_INT
