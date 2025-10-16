@@ -4,6 +4,7 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("com.google.devtools.ksp")
     id("org.jetbrains.kotlin.plugin.serialization") version "1.9.0" apply false
+    id("kotlin-parcelize")
 }
 
 android {
@@ -81,6 +82,10 @@ dependencies {
 
     //Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.9.4")
+
+    implementation("androidx.compose.material3.adaptive:adaptive:1.3.0-alpha01")
+    implementation("androidx.compose.material3.adaptive:adaptive-layout:1.3.0-alpha01")
+    implementation("androidx.compose.material3.adaptive:adaptive-navigation:1.3.0-alpha01")
 
     //Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
