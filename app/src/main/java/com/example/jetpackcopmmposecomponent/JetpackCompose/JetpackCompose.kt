@@ -13,8 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.BlurImages.BlurImages
-import com.example.jetpackcopmmposecomponent.component.RemoveItemsBySwiping.RemoveItemsBySwiping
+import com.example.jetpackcopmmposecomponent.component.SharedElementTransition.SharedElementTransition
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -28,7 +27,7 @@ class JetpackCompose : ComponentActivity() {
         )
         setContent {
             JetpackComposeComponentTheme {
-                TranslucentStatusBar(color = Color.Blue)
+                TranslucentStatusBar(color = Color.Transparent)
                 Scaffold (
                     modifier = Modifier
                         .fillMaxSize()
@@ -112,7 +111,8 @@ class JetpackCompose : ComponentActivity() {
             //  ImageForCoilComposable()
             // MLKitDocumentScanner()
             //RemoveItemsBySwiping()
-            BlurImages()
+            //    BlurImages()
+            SharedElementTransition()
         }
 
     }
