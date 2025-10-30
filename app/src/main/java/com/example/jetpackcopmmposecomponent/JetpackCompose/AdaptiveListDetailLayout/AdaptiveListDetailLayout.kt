@@ -131,7 +131,8 @@ fun DetailPane(
         ) {
             Icon(
                 imageVector = Icons.AutoMirrored.Rounded.ArrowBackIos,
-                contentDescription = null
+                contentDescription = null,
+                tint = Color.Blue
             )
         }
         Text(
