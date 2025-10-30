@@ -179,4 +179,10 @@ dependencies {
     implementation("io.coil-kt:coil-svg:2.7.0")
     //ML kit Scanner
     implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0")
+
+    // Supabase
+    implementation(platform(libs.supabase.bom))
+    implementation(libs.realtime.kt)
+    implementation(libs.postgrest.kt)
+    implementation(libs.ktor.client.android)
 }
