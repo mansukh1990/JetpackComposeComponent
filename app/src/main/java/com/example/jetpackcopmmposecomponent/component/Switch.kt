@@ -3,8 +3,6 @@ package com.example.jetpackcopmmposecomponent.component
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Switch
-import androidx.compose.material3.SwitchColors
-import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -18,7 +16,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true, showSystemUi = true)
-fun ShowSwitch(modifier: Modifier = Modifier) {
+fun ShowSwitch() {
 
     val isChecked = remember {
         mutableStateOf(true)
@@ -29,11 +27,9 @@ fun ShowSwitch(modifier: Modifier = Modifier) {
         onCheckedChange = {
             isChecked.value = it
         },
-        modifier = modifier
-            .run {
-                size(80.dp)
-            padding(100.dp)
-            },
+        modifier = Modifier
+            .size(80.dp)
+            .padding(100.dp),
         thumbContent = {
             Text(
                 text = if (isChecked.value) "ON" else "OFF",
