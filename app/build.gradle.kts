@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.example.jetpackcopmmposecomponent"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.jetpackcopmmposecomponent"
@@ -180,9 +180,4 @@ dependencies {
     //ML kit Scanner
     implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0")
 
-    // Supabase
-    implementation(platform(libs.supabase.bom))
-    implementation(libs.realtime.kt)
-    implementation(libs.postgrest.kt)
-    implementation(libs.ktor.client.android)
 }

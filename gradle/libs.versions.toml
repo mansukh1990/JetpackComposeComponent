@@ -15,6 +15,8 @@ materialIconsExtended = "1.7.8"
 paletteKtx = "1.0.0"
 supabase = "2.5.2"
 ktorClientAndroid = "2.3.12"
+kotlinxSerializationJson = "1.6.3"
+
 
 
 [libraries]
@@ -42,6 +44,7 @@ supabase-bom = { group = "io.github.jan-tennert.supabase", name = "bom", version
 realtime-kt = { module = "io.github.jan-tennert.supabase:realtime-kt" }
 postgrest-kt = { module = "io.github.jan-tennert.supabase:postgrest-kt" }
 ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorClientAndroid" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
