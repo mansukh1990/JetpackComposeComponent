@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.JetpackCompose.AdaptiveListDetailLayout.AdaptiveListDetailLayout
+import com.example.jetpackcopmmposecomponent.component.ImageCarousel.ImageCarousel
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -116,7 +116,8 @@ class JetpackCompose : ComponentActivity() {
             //    BlurImages()
             //SharedElementTransition()
             // OverflowIndicator()
-            AdaptiveListDetailLayout()
+            // AdaptiveListDetailLayout()
+            ImageCarousel()
         }
 
     }

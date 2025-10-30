@@ -33,7 +33,6 @@ import kotlinx.parcelize.Parcelize
 @Composable
 fun AdaptiveListDetailLayout() {
     ListDetailLayout()
-
 }
 
 @OptIn(ExperimentalMaterial3AdaptiveApi::class)
