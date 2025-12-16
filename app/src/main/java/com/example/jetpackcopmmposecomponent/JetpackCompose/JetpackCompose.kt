@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.ObservingNetworkConnectionState.NetworkScreen
+import com.example.jetpackcopmmposecomponent.component.PullToRefresh.PullToRefresh
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -118,7 +118,8 @@ class JetpackCompose : ComponentActivity() {
             //OverflowIndicator()
             // AdaptiveListDetailLayout()
             //ImageCarousel()
-            NetworkScreen()
+            // NetworkScreen()
+            PullToRefresh()
 
         }
 
