@@ -8,15 +8,21 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.JetpackCompose.ExoPlayer.VideoScreen
-import com.example.jetpackcopmmposecomponent.component.PullToRefresh.PullToRefresh
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
+import com.example.jetpackcopmmposecomponent.component.custom_dialog.CustomDeleteDialog
+import com.example.jetpackcopmmposecomponent.component.custom_dialog.ShowCustomDeleteDialog
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -36,6 +42,7 @@ class JetpackCompose : ComponentActivity() {
                         .fillMaxSize()
                         .statusBarsPadding()
                 ) {
+
                     ComposePreview()
                 }
             }
@@ -55,60 +62,60 @@ class JetpackCompose : ComponentActivity() {
         JetpackComposeComponentTheme {
             //TextLayout(name = "Android", modifier = modifier)
             //ButtonComposableLayout()
-            // ButtonLayout()
-            // ButtonComposable(modifier = modifier)
+            //ButtonLayout()
+            //ButtonComposable(modifier = modifier)
             //ColumnComposable(modifier = modifier)
-            //  RowComposable(modifier = modifier)
-            // BoxComposable(modifier = modifier)
-            // SurfaceComposable(modifier = modifier)
-            // CardComposable(modifier = modifier)
-            // CounterApp(modifier = modifier)
-            // ImageComposable(modifier = modifier)
+            //RowComposable(modifier = modifier)
+            //BoxComposable(modifier = modifier)
+            //SurfaceComposable(modifier = modifier)
+            //CardComposable(modifier = modifier)
+            //CounterApp(modifier = modifier)
+            //ImageComposable(modifier = modifier)
             //IconsComposable(modifier = modifier)
             //TextFieldComposable(modifier = modifier)
             //ChipsComposable(modifier = modifier)
             //LazyColumnComposable(modifier = modifier)
-            // LazyRowComposable(modifier = modifier)
+            //LazyRowComposable(modifier = modifier)
             //LazyVerticalGridComposable(modifier = modifier)
             //LazyHorizontalGridComposable(modifier = modifier)
-            // LazyVerticalStaggeredGridComposable(modifier = modifier)
+            //LazyVerticalStaggeredGridComposable(modifier = modifier)
             //LazyHorizontalStaggeredGridComposable(modifier = modifier)
-            // CheckBoxComposable(modifier = modifier)
-            //  CheckBoxUi()
+            //CheckBoxComposable(modifier = modifier)
+            //CheckBoxUi()
             //StarBucksNavigation()
             //TextFieldLayout()
             //ComposableBottomSheet()
-            // ScaffoldComposable()
-            //  NavigationDrawerComposable()
+            //ScaffoldComposable()
+            //NavigationDrawerComposable()
             //DialogComposable()
-            //  BottomSheetComposable()
-            // SideEffectComposable()
-            // DisposableEffectComposable(modifier = modifier)
-            // SideEffectsComposable(modifier=modifier)
-            // RememberCoroutineScopeComposable(modifier = modifier)
+            //BottomSheetComposable()
+            //SideEffectComposable()
+            //DisposableEffectComposable(modifier = modifier)
+            //SideEffectsComposable(modifier=modifier)
+            //RememberCoroutineScopeComposable(modifier = modifier)
             //RememberUpdateStateComposable(modifier = modifier)
-            // ProduceStateComposable(modifier = modifier)
+            //ProduceStateComposable(modifier = modifier)
             //DerivedStateComposable(modifier = modifier)
-            //  LazyListScreen(modifier = modifier)
-            // ExposedDropdownMenuComposable(modifier = modifier)
-            // LazyVerticalStgGridComposable(modifier = modifier)
-            // LazyHorizontalStgGridComposable(modifier = modifier)
-            //  TimePickerComposable(modifier = modifier)
-            // DateRangePickerComposable(modifier = modifier)
-            //  DatePickerComposable(modifier = modifier)
-            //  PickImageFromGallery()
+            //LazyListScreen(modifier = modifier)
+            //ExposedDropdownMenuComposable(modifier = modifier)
+            //LazyVerticalStgGridComposable(modifier = modifier)
+            //LazyHorizontalStgGridComposable(modifier = modifier)
+            //TimePickerComposable(modifier = modifier)
+            //DateRangePickerComposable(modifier = modifier)
+            //DatePickerComposable(modifier = modifier)
+            //PickImageFromGallery()
             //PickImageFromCamera()
-            // ShowSwitch(modifier = modifier)
-            // RadioButtonLayout()
-            //  HorizontalPagerScreen()
-            //  VerticalPagerScreen()
+            //ShowSwitch(modifier = modifier)
+            //RadioButtonLayout()
+            //HorizontalPagerScreen()
+            //VerticalPagerScreen()
             //TabViewLayout(modifier = modifier)
             //CustomTitleBar()
-            // PasswordValidationScreen()
-           // MultiplePhotoPickerFromGallery()
+            //PasswordValidationScreen()
+            //MultiplePhotoPickerFromGallery()
             //DrawingScreen()
             //SegmentedButtonsComposable()
-           //OtpTextField
+            //OtpTextField
             //LottieAnimationComposable()
             //ImageLoaderComposable()
             //ImageForCoilComposable()
@@ -117,11 +124,13 @@ class JetpackCompose : ComponentActivity() {
             //BlurImages()
             //SharedElementTransition()
             //OverflowIndicator()
-            // AdaptiveListDetailLayout()
+            //AdaptiveListDetailLayout()
             //ImageCarousel()
-            // NetworkScreen()
-           // PullToRefresh()
-            VideoScreen()
+            //NetworkScreen()
+            //PullToRefresh()
+            // VideoScreen()
+
+            ShowCustomDeleteDialog()
 
         }
 

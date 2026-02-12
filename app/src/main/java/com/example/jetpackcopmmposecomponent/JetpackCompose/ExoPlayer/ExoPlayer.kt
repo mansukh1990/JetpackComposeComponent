@@ -13,12 +13,13 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.TopAppBar
 import androidx.compose.material3.Button
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -86,6 +87,7 @@ fun VideoPlayer(
 
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun VideoScreen() {
     Scaffold(
@@ -112,25 +114,25 @@ fun VideoScreen() {
             Column(
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-//                VideoPlayer(
-//                    videoUrl = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
-//                    modifier = Modifier
-//                        .fillMaxWidth()
-//                        .aspectRatio(16 / 9f)
-//                )
-//                ComposeVideoPlayerWithControls(
-//                    videoUrl = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
-//                )
-                VideoFeed(
-                    videoUrls = listOf(
-                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
-                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
-                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
-                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
-                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
-                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
-                    )
+                VideoPlayer(
+                    videoUrl = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .aspectRatio(16 / 9f)
                 )
+                ComposeVideoPlayerWithControls(
+                    videoUrl = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+                )
+//                VideoFeed(
+//                    videoUrls = listOf(
+//                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
+//                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
+//                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
+//                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
+//                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
+//                        "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+//                    )
+//                )
             }
 
         }
