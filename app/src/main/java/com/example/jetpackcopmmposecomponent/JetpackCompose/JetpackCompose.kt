@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcopmmposecomponent.component.CircularProgressbar.CustomProgressScreen
+import com.example.jetpackcopmmposecomponent.component.CircularProgressbar.LoadingDialogSscreen
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.component.custom_dialog.CustomDeleteDialog
 import com.example.jetpackcopmmposecomponent.component.custom_dialog.ShowCustomDeleteDialog
@@ -131,7 +132,8 @@ class JetpackCompose : ComponentActivity() {
             //PullToRefresh()
             // VideoScreen()
             //ShowCustomDeleteDialog()
-            CustomProgressScreen()
+            //CustomProgressScreen()
+            LoadingDialogSscreen()
 
         }
 

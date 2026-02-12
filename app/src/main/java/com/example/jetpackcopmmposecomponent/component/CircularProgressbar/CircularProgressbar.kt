@@ -10,12 +10,17 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -29,6 +34,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import kotlinx.coroutines.delay
 
 @Preview
 @Composable
@@ -151,5 +158,85 @@ fun ButtonProgressBar(
         )
     }
 
+}
+
+@Composable
+fun LoadingDialogSscreen() {
+
+    var isDialog by remember { mutableStateOf(false) }
+
+    LaunchedEffect(isDialog) {
+        if (isDialog) {
+            delay(5000)   // 5 seconds
+            isDialog = false
+        }
+    }
+
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Button(onClick = { isDialog = true }) {
+            Text(text = "Start Loading")
+        }
+        Spacer(Modifier.height(16.dp))
+
+        Button(onClick = { isDialog = false }) {
+            Text("Stop Loading")
+        }
+    }
+    //LoadingDialog(isLoading = isDialog)
+    LoadingDialodWithCard(isLoading = isDialog)
+
+}
+
+@Composable
+fun LoadingDialog(
+    isLoading: Boolean,
+    message: String = "Loading...."
+) {
+    if (isLoading) {
+        Dialog(
+            onDismissRequest = {}
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(160.dp)
+                    .background(Color.White, RoundedCornerShape(12.dp)),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    CircularProgressIndicator()
+                    Spacer(Modifier.height(12.dp))
+                    Text(message, fontSize = 14.sp)
+                }
+            }
+        }
+    }
+
+}
+
+@Composable
+fun LoadingDialodWithCard(isLoading: Boolean) {
+    if (isLoading)
+        Dialog(onDismissRequest = { }) {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                elevation = CardDefaults.cardElevation(8.dp)
+            ) {
+                Column(
+                    modifier = Modifier.padding(24.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    CircularProgressIndicator()
+                    Spacer(Modifier.height(12.dp))
+                    Text("Please wait...")
+                }
+            }
+        }
 }
 
