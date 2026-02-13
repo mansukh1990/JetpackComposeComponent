@@ -1,6 +1,8 @@
 package com.example.jetpackcopmmposecomponent.component.`20_textfield`
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -10,6 +12,7 @@ import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Password
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -47,7 +50,9 @@ fun TextFieldComposable(
 
     Column(
         modifier = modifier
-            .padding(horizontal = 20.dp)
+            .fillMaxSize()
+            .padding(horizontal = 20.dp),
+        verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
 
         TextField(
@@ -83,21 +88,21 @@ fun TextFieldComposable(
                     imageVector = Icons.Default.Done, contentDescription = "Done Icon"
                 )
             },
-//        prefix = {
-//            Text(
-//                text = "Prefix text"
-//            )
-//        },
-//        suffix = {
-//            Text(
-//                text = "@gmail.com"
-//            )
-//        },
-//        supportingText = {
-//            Text(
-//                text = "This is a supporting text"
-//            )
-//        },
+        prefix = {
+            Text(
+                text = "Prefix text"
+            )
+        },
+        suffix = {
+            Text(
+                text = "@gmail.com"
+            )
+        },
+        supportingText = {
+            Text(
+                text = "This is a supporting text"
+            )
+        },
             isError = false,
             visualTransformation = VisualTransformation.None,
             keyboardOptions = KeyboardOptions(
@@ -143,7 +148,7 @@ fun TextFieldComposable(
             },
             leadingIcon = {
                 Icon(
-                    imageVector = Icons.Default.Email, contentDescription = "Email Icon"
+                    imageVector = Icons.Default.Password, contentDescription = "Email Icon"
                 )
             },
             trailingIcon = {
@@ -214,7 +219,7 @@ fun TextFieldComposable(
             },
             leadingIcon = {
                 Icon(
-                    imageVector = Icons.Default.Email, contentDescription = "Email Icon"
+                    imageVector = Icons.Default.Password, contentDescription = "Email Icon"
                 )
             },
             trailingIcon = {
@@ -257,8 +262,8 @@ fun TextFieldComposable(
             colors = OutlinedTextFieldDefaults.colors().copy(
                 focusedIndicatorColor = Color.Transparent,
                 unfocusedIndicatorColor = Color.Transparent,
-                focusedContainerColor = Color.White,
-                unfocusedContainerColor = Color.White
+                focusedContainerColor = Color.LightGray,
+                unfocusedContainerColor = Color.Green
             )
 
         )

@@ -115,7 +115,10 @@ fun TextFieldLayout() {
             shape = RoundedCornerShape(8.dp),
             colors = TextFieldDefaults.colors(
                 unfocusedIndicatorColor = Color.Gray,
-                focusedIndicatorColor = Color.Yellow
+                focusedIndicatorColor = Color.Transparent,
+                focusedLabelColor = Color.Black,
+                unfocusedLabelColor = Color.Unspecified,
+                disabledLabelColor = Color.Black,
             )
         )
 

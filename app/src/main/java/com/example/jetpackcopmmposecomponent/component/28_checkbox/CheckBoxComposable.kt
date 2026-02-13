@@ -34,7 +34,7 @@ fun CheckBoxComposable(modifier: Modifier = Modifier) {
             },
             colors = CheckboxDefaults.colors().copy(
                 checkedBoxColor = Color.Blue,
-                uncheckedBoxColor = Color.Blue,
+                uncheckedBoxColor = Color.Transparent,
                 checkedBorderColor = Color.Green,
                 uncheckedBorderColor = Color.Green,
                 checkedCheckmarkColor = Color.Red,

@@ -35,7 +35,7 @@ fun LazyHorizontalGridComposable(modifier: Modifier = Modifier) {
 
     LazyHorizontalGrid (
         modifier = modifier,
-        rows = GridCells.Fixed(2),
+        rows = GridCells.Fixed(5),
        //  rows = GridCells.FixedSize(180.dp),
        // rows = GridCells.Adaptive(100.dp),
         contentPadding = PaddingValues(6.dp),

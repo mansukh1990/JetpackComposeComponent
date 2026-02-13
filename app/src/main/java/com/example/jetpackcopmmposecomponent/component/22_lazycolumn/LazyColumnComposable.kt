@@ -30,6 +30,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun LazyColumnComposable(modifier: Modifier = Modifier) {
 
@@ -47,15 +48,13 @@ fun LazyColumnComposable(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun CricketerItem(
-    modifier: Modifier = Modifier,
-    name: String = "Sachin",
-    color: Color = Color.Blue
+    name: String,
+    color: Color
 ) {
     Surface(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxWidth()
             .shadow(
                 elevation = 10.dp,
@@ -71,7 +70,7 @@ fun CricketerItem(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                modifier = modifier
+                modifier = Modifier
                     .size(40.dp)
                     .padding(start = 10.dp)
                     .clip(CircleShape)
@@ -81,7 +80,7 @@ fun CricketerItem(
                 tint = Color.White
             )
             Text(
-                modifier = modifier.padding(10.dp),
+                modifier = Modifier.padding(10.dp),
                 text = name,
                 style = TextStyle(
                     fontSize = 30.sp,
@@ -104,6 +103,20 @@ data class Cricketer(
 )
 
 val cricketPlayerList = listOf(
+    Cricketer("Sachin", Color.Yellow),
+    Cricketer("Virat", Color.Red),
+    Cricketer("Sehwag", Color.Blue),
+    Cricketer("Dravid", Color.LightGray),
+    Cricketer("Laxman", Color.DarkGray),
+    Cricketer("SuryaKumar", Color.Magenta),
+    Cricketer("Abhishek", Color.Gray),
+    Cricketer("Hardik", Color.DarkGray),
+    Cricketer("Sanju Samson", Color.LightGray),
+    Cricketer("Kuldeep", Color.Magenta),
+    Cricketer("Jasprit Bumrah", Color.Green),
+    Cricketer("Axar Patel", Color.Yellow),
+    Cricketer("Mahendra Singh Dhoni", Color.Cyan),
+    Cricketer("Saurav Ganguly", Color.Black),
     Cricketer("Sachin", Color.Yellow),
     Cricketer("Virat", Color.Red),
     Cricketer("Sehwag", Color.Blue),

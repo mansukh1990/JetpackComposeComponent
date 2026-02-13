@@ -8,23 +8,16 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.statusBarsPadding
-import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.CircularProgressbar.CustomProgressScreen
-import com.example.jetpackcopmmposecomponent.component.CircularProgressbar.LoadingDialogSscreen
+import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckBoxComposable
+import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckBoxUi
+import com.example.jetpackcopmmposecomponent.component.`29_topappbar`.TopAppBarComp
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
-import com.example.jetpackcopmmposecomponent.component.custom_dialog.CustomDeleteDialog
-import com.example.jetpackcopmmposecomponent.component.custom_dialog.ShowCustomDeleteDialog
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -66,26 +59,31 @@ class JetpackCompose : ComponentActivity() {
             //ButtonComposableLayout()
             //ButtonLayout()
             //ButtonComposable(modifier = modifier)
-            //ColumnComposable(modifier = modifier)
-            //RowComposable(modifier = modifier)
-            //BoxComposable(modifier = modifier)
-            //SurfaceComposable(modifier = modifier)
-            //CardComposable(modifier = modifier)
+            //ColumnComposable()
+            //RowComposable()
+            //BoxComposable()
+            //BoxLayout()
+            //SurfaceComposable()
+            //CardComposable()
             //CounterApp(modifier = modifier)
-            //ImageComposable(modifier = modifier)
-            //IconsComposable(modifier = modifier)
-            //TextFieldComposable(modifier = modifier)
-            //ChipsComposable(modifier = modifier)
-            //LazyColumnComposable(modifier = modifier)
-            //LazyRowComposable(modifier = modifier)
-            //LazyVerticalGridComposable(modifier = modifier)
-            //LazyHorizontalGridComposable(modifier = modifier)
-            //LazyVerticalStaggeredGridComposable(modifier = modifier)
-            //LazyHorizontalStaggeredGridComposable(modifier = modifier)
-            //CheckBoxComposable(modifier = modifier)
-            //CheckBoxUi()
-            //StarBucksNavigation()
+            //ImageComposable()
+            //IconsComposable()
+            //ImageAndIcon()
+            //TextFieldComposable()
             //TextFieldLayout()
+            //TextFieldsLayout()
+            //ChipsComposable()
+            //FilterChipLayout()
+            //LazyColumnComposable()
+            //LazyRowComposable()
+            //LazyVerticalGridComposable()
+            //LazyHorizontalGridComposable()
+            //LazyVerticalStaggeredGridComposable()
+            //LazyHorizontalStaggeredGridComposable()
+            //CheckBoxComposable()
+            //CheckBoxUi()
+            TopAppBarComp()
+            //StarBucksNavigation()
             //ComposableBottomSheet()
             //ScaffoldComposable()
             //NavigationDrawerComposable()
@@ -133,7 +131,7 @@ class JetpackCompose : ComponentActivity() {
             // VideoScreen()
             //ShowCustomDeleteDialog()
             //CustomProgressScreen()
-            LoadingDialogSscreen()
+            //LoadingDialogSscreen()
 
         }
 

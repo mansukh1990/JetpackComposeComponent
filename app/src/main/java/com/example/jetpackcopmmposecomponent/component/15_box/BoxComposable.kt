@@ -16,16 +16,16 @@ import androidx.compose.ui.unit.dp
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun BoxComposable(modifier: Modifier) {
+fun BoxComposable() {
     Box(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxSize()
             .background(color = Color.Blue),
         contentAlignment = Alignment.Center,
         propagateMinConstraints = false
     ) {
         Box(
-            modifier = modifier
+            modifier = Modifier
                 .size(300.dp)
                 .padding(20.dp)
                 .clip(RoundedCornerShape(30.dp))
@@ -34,13 +34,13 @@ fun BoxComposable(modifier: Modifier) {
 
         ) {
             Box(
-                modifier = modifier
+                modifier = Modifier
                     .size(100.dp)
                     .clip(RoundedCornerShape(30.dp))
                     .background(color = Color.LightGray)
             )
             Box(
-                modifier = modifier
+                modifier = Modifier
                     .size(100.dp)
                     .padding(8.dp)
                     .clip(RoundedCornerShape(30.dp))
@@ -48,7 +48,7 @@ fun BoxComposable(modifier: Modifier) {
                     .align(Alignment.TopStart)
             )
             Box(
-                modifier = modifier
+                modifier = Modifier
                     .size(100.dp)
                     .padding(8.dp)
                     .clip(RoundedCornerShape(30.dp))
@@ -56,7 +56,7 @@ fun BoxComposable(modifier: Modifier) {
                     .align(Alignment.TopEnd)
             )
             Box(
-                modifier = modifier
+                modifier = Modifier
                     .size(100.dp)
                     .padding(8.dp)
                     .clip(RoundedCornerShape(30.dp))
@@ -64,7 +64,7 @@ fun BoxComposable(modifier: Modifier) {
                     .align(Alignment.BottomStart)
             )
             Box(
-                modifier = modifier
+                modifier = Modifier
                     .size(100.dp)
                     .padding(8.dp)
                     .clip(RoundedCornerShape(30.dp))

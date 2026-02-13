@@ -36,9 +36,9 @@ fun LazyVerticalGridComposable(modifier: Modifier = Modifier) {
 
     LazyVerticalGrid(
         modifier = modifier,
-        //columns = GridCells.Fixed(4),
+        columns = GridCells.Fixed(3),
        // columns = GridCells.FixedSize(180.dp),
-        columns = GridCells.Adaptive(100.dp),
+        //columns = GridCells.Adaptive(100.dp),
         contentPadding = PaddingValues(6.dp),
         verticalArrangement = Arrangement.spacedBy(6.dp),
         horizontalArrangement = Arrangement.spacedBy(6.dp)

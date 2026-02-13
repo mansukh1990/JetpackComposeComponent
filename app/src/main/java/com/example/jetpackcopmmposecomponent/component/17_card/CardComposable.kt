@@ -54,6 +54,7 @@ fun CardComposable(modifier: Modifier = Modifier) {
                     )
                 )
             )
+
         }
     }
 

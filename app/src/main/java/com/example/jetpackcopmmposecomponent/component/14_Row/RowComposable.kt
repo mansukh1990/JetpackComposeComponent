@@ -17,19 +17,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun RowComposable(modifier: Modifier) {
+fun RowComposable() {
 
     Row(
-        modifier = modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxSize(),
         horizontalArrangement = Arrangement.SpaceAround,
         verticalAlignment = Alignment.CenterVertically
 
     ) {
         Button(
             onClick = {},
-            modifier = modifier
-            //.fillMaxWidth()
-            ,
             //enabled = false,
             // shape = RoundedCornerShape(5.dp)
             // shape = RectangleShape
@@ -54,9 +51,6 @@ fun RowComposable(modifier: Modifier) {
         }
         Button(
             onClick = {},
-            modifier = modifier
-            //.fillMaxWidth()
-            ,
             //enabled = false,
             // shape = RoundedCornerShape(5.dp)
             // shape = RectangleShape
@@ -81,9 +75,6 @@ fun RowComposable(modifier: Modifier) {
         }
         Button(
             onClick = {},
-            modifier = modifier
-            //.fillMaxWidth()
-            ,
             //enabled = false,
             // shape = RoundedCornerShape(5.dp)
             // shape = RectangleShape

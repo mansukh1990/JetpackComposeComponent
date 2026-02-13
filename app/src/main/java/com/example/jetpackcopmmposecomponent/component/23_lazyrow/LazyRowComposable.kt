@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -52,8 +51,8 @@ fun LazyRowComposable(modifier: Modifier = Modifier) {
 @Composable
 fun CricketerItem(
     modifier: Modifier = Modifier,
-    name: String = "Sachin",
-    color: Color = Color.Blue
+    name: String,
+    color: Color
 ) {
     Surface(
         modifier = modifier
@@ -105,6 +104,20 @@ data class Cricketer(
 )
 
 val cricketPlayerList = listOf(
+    Cricketer("Sachin", Color.Yellow),
+    Cricketer("Virat", Color.Red),
+    Cricketer("Sehwag", Color.Blue),
+    Cricketer("Dravid", Color.LightGray),
+    Cricketer("Laxman", Color.DarkGray),
+    Cricketer("SuryaKumar", Color.Magenta),
+    Cricketer("Abhishek", Color.Gray),
+    Cricketer("Hardik", Color.DarkGray),
+    Cricketer("Sanju Samson", Color.LightGray),
+    Cricketer("Kuldeep", Color.Magenta),
+    Cricketer("Jasprit Bumrah", Color.Green),
+    Cricketer("Axar Patel", Color.Yellow),
+    Cricketer("Mahendra Singh Dhoni", Color.Cyan),
+    Cricketer("Saurav Ganguly", Color.Black),
     Cricketer("Sachin", Color.Yellow),
     Cricketer("Virat", Color.Red),
     Cricketer("Sehwag", Color.Blue),

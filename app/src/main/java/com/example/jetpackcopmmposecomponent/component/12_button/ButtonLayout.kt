@@ -59,6 +59,13 @@ fun ButtonComposableLayout() {
             onClick = {},
             shape = RoundedCornerShape(10.dp),
             colors = ButtonDefaults.outlinedButtonColors(),
+            elevation = ButtonDefaults.buttonElevation(
+                defaultElevation = 0.dp,
+                pressedElevation = 0.dp,
+                disabledElevation = 0.dp,
+                hoveredElevation = 0.dp,
+                focusedElevation = 0.dp
+            ),
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(20.dp)

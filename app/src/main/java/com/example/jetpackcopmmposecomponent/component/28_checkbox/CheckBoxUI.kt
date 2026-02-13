@@ -55,8 +55,8 @@ fun CheckBoxUi() {
                 .size(40.dp)
                 .clip(RoundedCornerShape(8.dp)),
             colors = CheckboxDefaults.colors(
-                checkedColor = Color.Yellow,
-                checkmarkColor = Color.Black
+                checkedColor = Color.Blue,
+                checkmarkColor = Color.White
             )
         )
         Spacer(

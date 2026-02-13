@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -26,7 +27,7 @@ fun TextLayout(name: String, modifier: Modifier) {
         color = colorResource(id = R.color.black),
         fontWeight = FontWeight.Bold,
         fontSize = 35.sp,
-    //    fontFamily = FontFamily.Cursive,
+      // fontFamily = FontFamily.Cursive,
         fontStyle = FontStyle.Normal,
         letterSpacing = 5.sp,
         lineHeight = 25.sp,

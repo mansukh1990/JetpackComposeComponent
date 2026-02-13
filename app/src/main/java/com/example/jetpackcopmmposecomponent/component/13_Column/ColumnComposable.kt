@@ -18,18 +18,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ColumnComposable(modifier: Modifier) {
+fun ColumnComposable() {
 
     Column (
-        modifier = modifier.fillMaxHeight().fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxHeight()
+            .fillMaxWidth(),
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Button(
             onClick = {},
-            modifier = modifier
-            //.fillMaxWidth()
-            ,
             //enabled = false,
             // shape = RoundedCornerShape(5.dp)
             // shape = RectangleShape
@@ -54,9 +53,6 @@ fun ColumnComposable(modifier: Modifier) {
         }
         Button(
             onClick = {},
-            modifier = modifier
-            //.fillMaxWidth()
-            ,
             //enabled = false,
             // shape = RoundedCornerShape(5.dp)
             // shape = RectangleShape
@@ -81,9 +77,6 @@ fun ColumnComposable(modifier: Modifier) {
         }
         Button(
             onClick = {},
-            modifier = modifier
-            //.fillMaxWidth()
-            ,
             //enabled = false,
             // shape = RoundedCornerShape(5.dp)
             // shape = RectangleShape
@@ -108,9 +101,6 @@ fun ColumnComposable(modifier: Modifier) {
         }
         Button(
             onClick = {},
-            modifier = modifier
-            //.fillMaxWidth()
-            ,
             //enabled = false,
             // shape = RoundedCornerShape(5.dp)
             // shape = RectangleShape

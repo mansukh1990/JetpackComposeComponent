@@ -97,7 +97,7 @@ fun TextFieldsLayout() {
 //            visualTransformation = PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(
                 capitalization = KeyboardCapitalization.Words,
-                keyboardType = KeyboardType.Number,
+                keyboardType = KeyboardType.Text,
                 imeAction = ImeAction.Next
             ),
             //  singleLine = true,
@@ -108,7 +108,7 @@ fun TextFieldsLayout() {
                 focusedIndicatorColor = Color.Transparent,
                 unfocusedIndicatorColor = Color.Transparent
             ),
-            modifier = Modifier.focusRequester(focusRequester),
+            modifier = Modifier.focusRequester(focusRequester).fillMaxWidth(),
             keyboardActions = KeyboardActions(onDone = {
                 controller?.hide()
             }, onNext = {
@@ -129,11 +129,13 @@ fun TextFieldsLayout() {
                 unfocusedIndicatorColor = Color.Transparent
             ),
             shape = RoundedCornerShape(16.dp),
+            modifier = Modifier.fillMaxWidth()
         )
         Spacer(
             modifier = Modifier.height(20.dp)
         )
-        OutlinedTextField(value = "", onValueChange = {})
+        OutlinedTextField(value = "", onValueChange = {},
+            modifier = Modifier.fillMaxWidth())
         Spacer(
             modifier = Modifier.height(20.dp)
         )

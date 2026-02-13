@@ -3,7 +3,9 @@ package com.example.jetpackcopmmposecomponent.component.`19_icons`
 import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -26,8 +28,16 @@ import com.example.jetpackcopmmposecomponent.R
 
 @Composable
 fun ImageAndIcon() {
-    //  ImageLayout()
-    IconLayout()
+
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        ImageLayout()
+        IconLayout()
+    }
+
 }
 
 @Composable
