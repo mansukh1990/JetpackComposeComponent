@@ -14,9 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`2_floating_action_button`.FloatingActionButtonExample
-import com.example.jetpackcopmmposecomponent.component.`35_bottomsheetdialog`.PartialBottomSheet
-import com.example.jetpackcopmmposecomponent.component.ButtonComposable.ButtonExample
+import com.example.jetpackcopmmposecomponent.component.`3_icon_buttons`.IconButtonsExample
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -137,7 +135,8 @@ class JetpackCompose : ComponentActivity() {
             //ModalBottomSheetExample()
             //PartialBottomSheet()
             //ButtonExample()
-            FloatingActionButtonExample()
+            //FloatingActionButtonExample()
+            IconButtonsExample()
 
         }
 
