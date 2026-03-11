@@ -1,5 +1,7 @@
 package com.example.jetpackcopmmposecomponent.component.`29_topappbar`
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.width
@@ -26,6 +28,12 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
 
+@Composable
+fun TopAppBarCompo(modifier: Modifier = Modifier) {
+    Column(
+        verticalArrangement = Arrangement.Center
+    ) { }
+}
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TopAppBarComposable(modifier: Modifier = Modifier) {
