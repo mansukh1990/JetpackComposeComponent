@@ -1,13 +1,21 @@
 package com.example.jetpackcopmmposecomponent.component.ButtonComposable
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.TextButton
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ElevatedButton
+import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -44,5 +52,68 @@ fun ButtonComposable(modifier: Modifier) {
         Text(
             text = "Yes"
         )
+    }
+}
+
+@Composable
+fun ButtonExample() {
+
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(26.dp),
+        modifier = Modifier.fillMaxSize()
+    ) {
+        FilledButtonExample()
+        FilledTonalButtonExample()
+        ElevatedButtonExample()
+        OutlinedButtonExample()
+        TextButtonExample()
+
+    }
+
+}
+
+@Composable
+fun FilledButtonExample() {
+
+    Button(
+        onClick = {
+        }
+    ) {
+        Text(text = "Filled")
+    }
+}
+
+@Composable
+fun FilledTonalButtonExample() {
+
+    FilledTonalButton(onClick = {}) {
+        Text(text = "Tonal")
+    }
+}
+
+@Composable
+fun OutlinedButtonExample() {
+    OutlinedButton(onClick = {}) {
+        Text(text = "Outlined")
+    }
+
+}
+
+@Composable
+fun ElevatedButtonExample() {
+    ElevatedButton(
+        onClick = {}
+    ) {
+        Text(text = "Elevated")
+    }
+
+}
+
+@Composable
+fun TextButtonExample() {
+
+    TextButton(onClick = {}) {
+        Text(text = "Text Button")
     }
 }
