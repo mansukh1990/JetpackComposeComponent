@@ -14,10 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckBoxComposable
-import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckBoxUi
-import com.example.jetpackcopmmposecomponent.component.`29_topappbar`.TopAppBarComp
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
+import com.example.jetpackcopmmposecomponent.component.badged_box.BadgeInteractiveExample
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -82,7 +80,7 @@ class JetpackCompose : ComponentActivity() {
             //LazyHorizontalStaggeredGridComposable()
             //CheckBoxComposable()
             //CheckBoxUi()
-            TopAppBarComp()
+            //TopAppBarComp()
             //StarBucksNavigation()
             //ComposableBottomSheet()
             //ScaffoldComposable()
@@ -132,6 +130,8 @@ class JetpackCompose : ComponentActivity() {
             //ShowCustomDeleteDialog()
             //CustomProgressScreen()
             //LoadingDialogSscreen()
+            //BadgeExample()
+            BadgeInteractiveExample()
 
         }
 
