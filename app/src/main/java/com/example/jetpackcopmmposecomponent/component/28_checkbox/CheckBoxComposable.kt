@@ -49,7 +49,7 @@ fun CheckBoxComposable(modifier: Modifier = Modifier) {
 
 @Composable
 fun CheckboxMinimalExample() {
-    var checked by remember { mutableStateOf(true) }
+    var checked by remember { mutableStateOf(false) }
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
@@ -121,3 +121,68 @@ fun CheckboxParentExample() {
 }
 
 
+@Composable
+fun CheckboxMinimalExample(modifier: Modifier = Modifier) {
+    var checked by remember { mutableStateOf(true) }
+
+    Row(
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text("Minimal checkbox")
+        Checkbox(
+            checked = checked,
+            onCheckedChange = {
+                checked = it
+            }
+        )
+    }
+    Text(if (checked) "Checkbox is checked" else "Checkbox is unchecked")
+
+}
+
+@Composable
+fun CheckboxParentExamples() {
+    val childCheckedStates = remember { mutableStateListOf(false, false, false,false) }
+
+    val parentState = when {
+        childCheckedStates.all { it } -> ToggleableState.On
+        childCheckedStates.none { it } -> ToggleableState.Off
+        else -> ToggleableState.Indeterminate
+    }
+
+    Column {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text("Select all")
+            TriStateCheckbox(
+                state = parentState,
+                onClick = {
+                    val newState = parentState != ToggleableState.On
+                    childCheckedStates.forEachIndexed { index, _ ->
+                        childCheckedStates[index] = newState
+                    }
+                }
+            )
+        }
+
+        childCheckedStates.forEachIndexed { index, checked ->
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text("Option ${index + 1}")
+                Checkbox(
+                    checked = checked,
+                    onCheckedChange = { isChecked ->
+                        childCheckedStates[index] = isChecked
+                    }
+                )
+            }
+        }
+        if (childCheckedStates.all { it }) {
+            Text("All options selected")
+        }
+    }
+
+
+}

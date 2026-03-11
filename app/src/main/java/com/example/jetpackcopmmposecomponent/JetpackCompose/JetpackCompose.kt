@@ -14,6 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckboxMinimalExample
+import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckboxParentExample
+import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckboxParentExamples
 import com.example.jetpackcopmmposecomponent.component.`4_carousel`.Carousel
 import com.example.jetpackcopmmposecomponent.component.`4_carousel`.CarouselExample_MultiBrowse
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
@@ -82,6 +85,8 @@ class JetpackCompose : ComponentActivity() {
             //LazyHorizontalStaggeredGridComposable()
             //CheckBoxComposable()
             //CheckBoxUi()
+            //CheckboxMinimalExample()
+            CheckboxParentExamples()
             //TopAppBarComp()
             //StarBucksNavigation()
             //ComposableBottomSheet()
@@ -139,7 +144,7 @@ class JetpackCompose : ComponentActivity() {
             //ButtonExample()
             //FloatingActionButtonExample()
             //IconButtonsExample()
-            Carousel()
+            //Carousel()
         }
 
     }
