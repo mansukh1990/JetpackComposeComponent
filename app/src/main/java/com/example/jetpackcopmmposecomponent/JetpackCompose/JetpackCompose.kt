@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.component.`17_card`.CardExample
 import com.example.jetpackcopmmposecomponent.component.`3_icon_buttons`.IconButtonsExample
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
@@ -63,6 +64,7 @@ class JetpackCompose : ComponentActivity() {
             //BoxLayout()
             //SurfaceComposable()
             //CardComposable()
+            CardExample()
             //CounterApp(modifier = modifier)
             //ImageComposable()
             //IconsComposable()
@@ -136,7 +138,7 @@ class JetpackCompose : ComponentActivity() {
             //PartialBottomSheet()
             //ButtonExample()
             //FloatingActionButtonExample()
-            IconButtonsExample()
+            //IconButtonsExample()
 
         }
 
