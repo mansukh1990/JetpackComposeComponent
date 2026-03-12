@@ -19,6 +19,7 @@ import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckboxPar
 import com.example.jetpackcopmmposecomponent.component.`28_checkbox`.CheckboxParentExamples
 import com.example.jetpackcopmmposecomponent.component.`4_carousel`.Carousel
 import com.example.jetpackcopmmposecomponent.component.`4_carousel`.CarouselExample_MultiBrowse
+import com.example.jetpackcopmmposecomponent.component.`5_chip`.Chip
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -86,7 +87,7 @@ class JetpackCompose : ComponentActivity() {
             //CheckBoxComposable()
             //CheckBoxUi()
             //CheckboxMinimalExample()
-            CheckboxParentExamples()
+            //CheckboxParentExamples()
             //TopAppBarComp()
             //StarBucksNavigation()
             //ComposableBottomSheet()
@@ -145,6 +146,7 @@ class JetpackCompose : ComponentActivity() {
             //FloatingActionButtonExample()
             //IconButtonsExample()
             //Carousel()
+            Chip()
         }
 
     }
