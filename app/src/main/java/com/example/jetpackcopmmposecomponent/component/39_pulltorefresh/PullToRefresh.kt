@@ -1,4 +1,4 @@
-package com.example.jetpackcopmmposecomponent.component.PullToRefresh
+package com.example.jetpackcopmmposecomponent.component.`39_pulltorefresh`
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
