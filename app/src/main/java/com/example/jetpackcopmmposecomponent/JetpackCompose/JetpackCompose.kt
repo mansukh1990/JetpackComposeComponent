@@ -14,9 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`33_naviationdrawer`.DetailedDrawerExample
-import com.example.jetpackcopmmposecomponent.component.`9_dropdownmenu`.DropdownMenuWithDetails
-import com.example.jetpackcopmmposecomponent.component.`9_dropdownmenu`.LongBasicDropdownMenu
+import com.example.jetpackcopmmposecomponent.component.`10_navigationrail`.NavigationRailExample
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -151,9 +149,10 @@ class JetpackCompose : ComponentActivity() {
             //MinimalDropdownMenu()
             //LongBasicDropdownMenu()
             //DropdownMenuWithDetails()
-            DetailedDrawerExample(
-                content = {}
-            )
+//            DetailedDrawerExample(
+//                content = {}
+//            )
+            NavigationRailExample()
         }
 
     }
