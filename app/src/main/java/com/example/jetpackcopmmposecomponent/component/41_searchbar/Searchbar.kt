@@ -131,7 +131,7 @@ fun SimpleSearchBar(
                         onSearch(textFieldState.text.toString())
                         expanded = false
                     },
-                    expanded = expanded,
+                    expanded = false,
                     onExpandedChange = { expanded = it },
                     placeholder = { Text("Search here") },
                     leadingIcon = {
