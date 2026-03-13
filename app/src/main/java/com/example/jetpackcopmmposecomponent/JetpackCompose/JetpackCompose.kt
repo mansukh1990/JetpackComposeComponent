@@ -14,11 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`39_pulltorefresh`.PullToRefreshBasic
-import com.example.jetpackcopmmposecomponent.component.`39_pulltorefresh`.PullToRefreshCustomStyle
-import com.example.jetpackcopmmposecomponent.component.`40_resources`.Resources
+import com.example.jetpackcopmmposecomponent.component.`41_searchbar`.Searchbar
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
-import com.example.jetpackcopmmposecomponent.component.radiobuton.RadioButtonSingleSelection
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -161,7 +158,8 @@ class JetpackCompose : ComponentActivity() {
             //PullToRefreshBasic()
             //PullToRefreshCustomStyle()
             //RadioButtonSingleSelection()
-            Resources()
+            //Resources()
+            Searchbar()
         }
 
     }
