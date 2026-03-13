@@ -60,7 +60,9 @@ fun RadioButton() {
             }
         }
         Text(
-            text = genderState, modifier = Modifier.padding(start = 10.dp, top = 20.dp)
+            text = genderState,
+            modifier = Modifier
+                .padding(start = 10.dp, top = 20.dp)
         )
 
     }
