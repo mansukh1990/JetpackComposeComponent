@@ -8,14 +8,18 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.material.rememberScaffoldState
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarHost
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcopmmposecomponent.component.`41_searchbar`.Searchbar
-import com.example.jetpackcopmmposecomponent.component.`42_slider`.Slider
+import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.AppSnackbar
+import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.ScreenTwo
+import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.SnackBarScreen
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -28,10 +32,19 @@ class JetpackCompose : ComponentActivity() {
                 Color.Transparent.toArgb()
             )
         )
+
         setContent {
+
+            val scope = rememberCoroutineScope()
+
             JetpackComposeComponentTheme {
                 TranslucentStatusBar(color = Color.Transparent)
                 Scaffold (
+                    snackbarHost = {
+                        SnackbarHost(
+                            hostState = AppSnackbar.snackbarHostState
+                        )
+                    },
                     modifier = Modifier
                         .fillMaxSize()
                         .statusBarsPadding()
@@ -54,6 +67,8 @@ class JetpackCompose : ComponentActivity() {
     @Composable
     fun ComposePreview(modifier: Modifier = Modifier) {
         JetpackComposeComponentTheme {
+            val scaffoldState = rememberScaffoldState()
+
             //TextLayout(name = "Android", modifier = modifier)
             //ButtonComposableLayout()
             //ButtonLayout()
@@ -161,7 +176,10 @@ class JetpackCompose : ComponentActivity() {
             //RadioButtonSingleSelection()
             //Resources()
             //Searchbar()
-            Slider()
+            //Slider()
+            //Snackbar()
+            //ScreenTwo()
+            SnackBarScreen()
         }
 
     }
