@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcopmmposecomponent.component.`41_searchbar`.Searchbar
+import com.example.jetpackcopmmposecomponent.component.`42_slider`.Slider
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -159,7 +160,8 @@ class JetpackCompose : ComponentActivity() {
             //PullToRefreshCustomStyle()
             //RadioButtonSingleSelection()
             //Resources()
-            Searchbar()
+            //Searchbar()
+            Slider()
         }
 
     }
