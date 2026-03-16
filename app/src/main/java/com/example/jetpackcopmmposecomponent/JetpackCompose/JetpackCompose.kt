@@ -18,8 +18,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.AppSnackbar
-import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.ScreenTwo
 import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.SnackBarScreen
+import com.example.jetpackcopmmposecomponent.component.`44_switch`.SwitchExample
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
@@ -177,9 +177,8 @@ class JetpackCompose : ComponentActivity() {
             //Resources()
             //Searchbar()
             //Slider()
-            //Snackbar()
-            //ScreenTwo()
-            SnackBarScreen()
+            //SnackBarScreen()
+            SwitchExample()
         }
 
     }
