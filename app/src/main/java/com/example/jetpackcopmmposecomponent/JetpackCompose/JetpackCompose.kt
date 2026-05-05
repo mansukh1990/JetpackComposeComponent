@@ -21,6 +21,7 @@ import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.AppSnackbar
 import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.SnackBarScreen
 import com.example.jetpackcopmmposecomponent.component.`44_switch`.SwitchExample
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
+import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.TimePickerComposables
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -178,7 +179,8 @@ class JetpackCompose : ComponentActivity() {
             //Searchbar()
             //Slider()
             //SnackBarScreen()
-            SwitchExample()
+            //SwitchExample()
+            TimePickerComposables()
         }
 
     }
