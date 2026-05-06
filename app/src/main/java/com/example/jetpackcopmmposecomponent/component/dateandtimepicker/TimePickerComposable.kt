@@ -3,11 +3,14 @@ package com.example.jetpackcopmmposecomponent.component.dateandtimepicker
 import android.os.Build
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.AlertDialog
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -20,6 +23,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -132,19 +136,52 @@ fun TimePickerDialog(
 fun TimePickerComposables() {
     val context = LocalContext.current
 
-    var showTimePicker by remember { mutableStateOf(true) }
+    var showTimePicker by remember { mutableStateOf(false) }
+    var selectedTime by remember { mutableStateOf("") }
+    var isTimeVisible by remember { mutableStateOf(false) }
 
-    if (showTimePicker) {
-        TimePickerDialogExample(
-            onCancel = {
-                showTimePicker = false
-            },
-            onConfirm = { hour, minute ->
-                showTimePicker = false
-                Toast.makeText(context, "$hour:$minute", Toast.LENGTH_SHORT).show()
+    Box(
+        modifier = Modifier
+            .fillMaxSize(), contentAlignment = Alignment.Center
+    ) {
+        Column() {
+            Button(
+                onClick = {
+                    showTimePicker = true
+                }
+            ) {
+                Text("Click For Timepicker")
 
             }
-        )
+            Spacer(modifier = Modifier.height(20.dp))
+            if (isTimeVisible) {
+                Text(
+                    text = "Selected Time: $selectedTime",
+                    style = MaterialTheme.typography.bodyLarge
+                )
+            }
+        }
+
+        if (showTimePicker) {
+            TimePickerDialogExample(
+                onCancel = {
+                    showTimePicker = false
+                },
+                onConfirm = { hour, minute ->
+                    showTimePicker = false
+
+                    val formattedTime =
+                        String.format("%02d:%02d", hour, minute)
+
+                    selectedTime = formattedTime
+                    isTimeVisible = true
+
+
+                    Toast.makeText(context, formattedTime, Toast.LENGTH_SHORT).show()
+
+                }
+            )
+        }
     }
 
 

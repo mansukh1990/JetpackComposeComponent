@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -35,7 +36,7 @@ fun TextLayout(name: String, modifier: Modifier) {
         overflow = TextOverflow.Ellipsis,
       //  textAlign = TextAlign.Center,
         textDecoration = TextDecoration.Underline,
-        textAlign = TextAlign.Start
+        textAlign = TextAlign.Start,
     )
 
 }

@@ -18,8 +18,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.AppSnackbar
-import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.SnackBarScreen
-import com.example.jetpackcopmmposecomponent.component.`44_switch`.SwitchExample
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.TimePickerComposables
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
@@ -28,7 +26,11 @@ class JetpackCompose : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge(
-            statusBarStyle = SystemBarStyle.light(
+            statusBarStyle = SystemBarStyle.auto(
+                android.graphics.Color.TRANSPARENT,
+                Color.Transparent.toArgb()
+            ),
+            navigationBarStyle = SystemBarStyle.auto(
                 android.graphics.Color.TRANSPARENT,
                 Color.Transparent.toArgb()
             )
