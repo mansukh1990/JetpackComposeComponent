@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcopmmposecomponent.JetpackCompose.ClusterGoogleMap.ClusterMapScreen
 import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.AppSnackbar
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.TimePickerComposables
@@ -182,7 +183,8 @@ class JetpackCompose : ComponentActivity() {
             //Slider()
             //SnackBarScreen()
             //SwitchExample()
-            TimePickerComposables()
+            //TimePickerComposables()
+            ClusterMapScreen()
         }
 
     }
