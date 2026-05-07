@@ -3,7 +3,6 @@ package com.example.jetpackcopmmposecomponent.component.`2_floating_action_butto
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Edit
@@ -39,7 +38,9 @@ fun FloatingActionButtonExample() {
 @Composable
 fun SimpleFloatingActionButton() {
 
-    FloatingActionButton(onClick = {}) {
+    FloatingActionButton(onClick = {
+    }
+    ) {
         Icon(
             Icons.Filled.Add,
             contentDescription = null
@@ -51,9 +52,10 @@ fun SimpleFloatingActionButton() {
 fun SmallFloatingActionButton() {
 
     SmallFloatingActionButton(
-        onClick = {},
-//        containerColor = MaterialTheme.colorScheme.secondaryContainer,
-//        contentColor = MaterialTheme.colorScheme.secondary
+        onClick = {
+        },
+       containerColor = MaterialTheme.colorScheme.secondaryContainer,
+        contentColor = MaterialTheme.colorScheme.secondary
     ) {
         Icon(
             Icons.Filled.Add,

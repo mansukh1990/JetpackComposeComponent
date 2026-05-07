@@ -18,9 +18,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcopmmposecomponent.JetpackCompose.ClusterGoogleMap.ClusterMapScreen
+import com.example.jetpackcopmmposecomponent.component.`1_text`.TextLayout
+import com.example.jetpackcopmmposecomponent.component.`2_floating_action_button`.FloatingActionButtonExample
 import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.AppSnackbar
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
-import com.example.jetpackcopmmposecomponent.component.dateandtimepicker.TimePickerComposables
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
 
 class JetpackCompose : ComponentActivity() {
@@ -61,7 +62,12 @@ class JetpackCompose : ComponentActivity() {
         }
     }
 
-    @Preview(showBackground = true, showSystemUi = true, name = "Light Mode")
+    @Preview(
+        showBackground = true,
+        showSystemUi = true,
+        name = "Light Mode",
+        uiMode = Configuration.UI_MODE_NIGHT_NO
+    )
     @Preview(
         showBackground = true,
         showSystemUi = true,
@@ -158,7 +164,7 @@ class JetpackCompose : ComponentActivity() {
             //ModalBottomSheetExample()
             //PartialBottomSheet()
             //ButtonExample()
-            //FloatingActionButtonExample()
+            FloatingActionButtonExample()
             //IconButtonsExample()
             //Carousel()
             //Chip()
@@ -184,7 +190,7 @@ class JetpackCompose : ComponentActivity() {
             //SnackBarScreen()
             //SwitchExample()
             //TimePickerComposables()
-            ClusterMapScreen()
+            //ClusterMapScreen()
         }
 
     }
