@@ -13,6 +13,7 @@ import androidx.compose.material.IconButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.DirectionsWalk
 import androidx.compose.material.icons.filled.AccountBalance
+import androidx.compose.material.icons.filled.DeliveryDining
 import androidx.compose.material.icons.filled.DirectionsBus
 import androidx.compose.material.icons.filled.DirectionsCar
 import androidx.compose.material.icons.filled.UnfoldMore
@@ -113,7 +114,7 @@ fun MomentaryIconButton(
 
 @Composable
 fun MomentaryIconButtonExample() {
-    var pressedCount by remember { mutableIntStateOf(0) }
+    var pressedCount by rememberSaveable { mutableIntStateOf(0) }
 
     Row(
         modifier = Modifier.fillMaxWidth(),
@@ -163,9 +164,9 @@ fun SingleChoiceSegmentedButton() {
 @Composable
 fun MultiChoiceSegmentedButton() {
     val selectedOptions = remember {
-        mutableStateListOf(false, false, false)
+        mutableStateListOf(false, false, false,false)
     }
-    val options = listOf("Walk", "Ride", "Drive")
+    val options = listOf("Walk", "Ride", "Drive", "Cycling")
 
     MultiChoiceSegmentedButtonRow {
         options.forEachIndexed { index, label ->
@@ -197,6 +198,9 @@ fun MultiChoiceSegmentedButton() {
                             imageVector =
                                 Icons.Default.DirectionsCar,
                             contentDescription = "Directions Car"
+                        )
+                        "Cycling" -> Icon(
+                            imageVector = Icons.Default.DeliveryDining, contentDescription = null
                         )
                     }
                 }

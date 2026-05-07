@@ -20,6 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcopmmposecomponent.JetpackCompose.ClusterGoogleMap.ClusterMapScreen
 import com.example.jetpackcopmmposecomponent.component.`1_text`.TextLayout
 import com.example.jetpackcopmmposecomponent.component.`2_floating_action_button`.FloatingActionButtonExample
+import com.example.jetpackcopmmposecomponent.component.`3_icon_buttons`.IconButtonsExample
 import com.example.jetpackcopmmposecomponent.component.`43_snackbar`.AppSnackbar
 import com.example.jetpackcopmmposecomponent.component.TranslucentStatusBar.TranslucentStatusBar
 import com.example.jetpackcopmmposecomponent.ui.theme.JetpackComposeComponentTheme
@@ -164,8 +165,8 @@ class JetpackCompose : ComponentActivity() {
             //ModalBottomSheetExample()
             //PartialBottomSheet()
             //ButtonExample()
-            FloatingActionButtonExample()
-            //IconButtonsExample()
+            //FloatingActionButtonExample()
+            IconButtonsExample()
             //Carousel()
             //Chip()
             //DatePickerDocked()
